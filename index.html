@@ -86,26 +86,30 @@
     <!-- 導覽列 -->
     <nav class="sticky top-0 w-full z-50 glass-nav border-b border-stone-200/50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-baseline">
+            <!-- 品牌 Logo：已具備懸停效果 -->
+            <a href="https://uvaco.info" class="flex items-baseline group transition-transform hover:scale-105 duration-200">
                 <span class="text-2xl font-bold tracking-widest text-emerald-900 uppercase">Uvaco</span>
                 <span class="ml-2 text-xl font-medium text-emerald-700" data-i18n="brandSub">葡眾</span>
-            </div>
+            </a>
             
+            <!-- 選單項目：加入懸停縮放效果 -->
             <div class="hidden lg:flex space-x-8 font-bold text-xl text-stone-600">
-                <a href="#benefits" class="hover:text-emerald-800 transition-colors" data-i18n="navBenefits">產品優勢</a>
-                <a href="#philosophy" class="hover:text-emerald-800 transition-colors" data-i18n="navPhilosophy">品牌理念</a>
-                <a href="#news" class="hover:text-emerald-800 transition-colors" data-i18n="navNews">相關報導</a>
-                <a href="#downloads" class="hover:text-emerald-800 transition-colors" data-i18n="navDownloads">資源下載</a>
+                <a href="#benefits" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navBenefits">產品優勢</a>
+                <a href="#philosophy" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navPhilosophy">品牌理念</a>
+                <a href="#news" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navNews">相關報導</a>
+                <a href="#downloads" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navDownloads">資源下載</a>
             </div>
 
             <div class="flex items-center space-x-4">
-                <select onchange="changeLanguage(this.value)" class="bg-transparent border border-stone-300 rounded-full px-3 py-1 text-sm font-bold text-stone-600 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <!-- 語言切換選單：加入懸停縮放效果 -->
+                <select onchange="changeLanguage(this.value)" class="bg-transparent border border-stone-300 rounded-full px-3 py-1 text-sm font-bold text-stone-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer transition-transform hover:scale-105 duration-200">
                     <option value="zh-Hant">繁體</option>
                     <option value="zh-Hans">简体</option>
                     <option value="en">EN</option>
                     <option value="ms">BM</option>
                 </select>
-                <a href="#contact" class="hidden sm:block px-6 py-2.5 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 transition-all shadow-md" data-i18n="navJoin">
+                <!-- 加入按鈕：加入懸停縮放效果 -->
+                <a href="#contact" class="hidden sm:block px-6 py-2.5 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 shadow-md transition-all hover:scale-105 duration-200" data-i18n="navJoin">
                     搶先佈局大馬
                 </a>
             </div>
@@ -140,26 +144,26 @@
     <!-- 產品優點區塊 -->
     <section id="benefits" class="py-24 bg-white text-center px-6">
         <h2 class="text-4xl md:text-5xl font-bold text-stone-900 mb-16 tracking-tight" data-i18n="benefitsTitle">跨國界的品質，最堅實的後盾</h2>
-        <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-left">
             <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="award"></i></div>
-                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit1Title">品牌實力保證</h3>
-                <p class="text-stone-600 text-lg" data-i18n="benefit1Desc">葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑，是您進軍市場最穩定的支柱。</p>
+                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit1Title">品牌實力保證</h3>
+                <p class="text-stone-600 text-lg text-center" data-i18n="benefit1Desc">葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑，是您進軍市場最穩定的支柱。</p>
             </div>
             <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="trending-up"></i></div>
-                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit2Title">馬來西亞首波紅利</h3>
-                <p class="text-stone-600 text-lg" data-i18n="benefit2Desc">2026/05 正式落地，掌握市場真空期的黃金機會，成為第一批經營領袖。</p>
+                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit2Title">馬來西亞首波紅利</h3>
+                <p class="text-stone-600 text-lg text-center" data-i18n="benefit2Desc">2026/05 正式落地，掌握市場真空期的黃金機會，成為第一批經營領袖。</p>
             </div>
             <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="users"></i></div>
-                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit3Title">跨國團隊資源</h3>
-                <p class="text-stone-600 text-lg" data-i18n="benefit3Desc">我們提供跨國線上培訓系統，讓您在馬來西亞也能複製台灣成功的運作模式。</p>
+                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit3Title">跨國團隊資源</h3>
+                <p class="text-stone-600 text-lg text-center" data-i18n="benefit3Desc">我們提供跨國線上培訓系統，讓您在馬來西亞也能複製台灣成功的運作模式。</p>
             </div>
         </div>
     </section>
 
-    <!-- 品牌理念 (恢復區塊) -->
+    <!-- 品牌理念 -->
     <section id="philosophy" class="py-24 vibe-bg px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="relative">
@@ -183,14 +187,14 @@
         </div>
     </section>
 
-    <!-- 相關報導 (恢復區塊) -->
+    <!-- 相關報導 -->
     <section id="news" class="py-24 bg-emerald-50 border-y border-emerald-100 px-6">
         <div class="max-w-7xl mx-auto mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
                 <h2 class="text-4xl font-bold text-stone-900 mb-4 flex items-center">
                     <i data-lucide="newspaper" class="mr-3 text-emerald-700"></i> <span data-i18n="newsTitle">媒體焦點 / 相關報導</span>
                 </h2>
-                <p class="text-stone-500 text-lg" data-i18n="newsSubTitle">見證葡眾領先的研發實力與卓越市場表現</p>
+                <p class="text-stone-500 text-lg" data-i18n="newsSubTitle">見證葡眾領先的研發實力與市場表現</p>
             </div>
             <div class="flex bg-white p-1 rounded-full shadow-sm border border-emerald-100 self-start">
                 <button id="btn-marquee" onclick="toggleNewsView('marquee')" class="px-6 py-2 rounded-full text-sm font-bold bg-emerald-800 text-white transition-all" data-i18n="newsToggleMarquee">動態展示</button>
@@ -251,7 +255,7 @@
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl2Title">產品完整型錄</h3>
                 <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
             </div>
-            <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
+            <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="presentation"></i></div>
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl3Title">事業機會簡報</h3>
                 <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
