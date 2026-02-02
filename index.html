@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 優化：針對馬來西亞搜尋關鍵字 -->
     <meta name="description" content="Uvaco Pro-Partner Malaysia 2026 Official Launch. Join the first wave of core founding members. 葡眾馬來西亞 2026 正式啟動，招募首波創業夥伴。">
     <meta name="keywords" content="Uvaco Malaysia, 葡眾馬來西亞, Pro-Partner Malaysia, Side income Malaysia, 創業機會, 大馬保健品">
     <title>Uvaco | Pro-Partner Malaysia 2026</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 引入高品質 Noto Sans TC & Serif TC 作為現代化基準 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Lucide 圖示庫 -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         :root {
             --primary-green: #2d5a27;
             --soft-beige: #fdfaf6;
         }
-        
-        /* 替換字體為現代通用黑體系統：
-           優先使用 Noto Sans TC，後接 Apple 系統字、微軟正黑體 */
         body {
             font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "PingFang SC", "Microsoft JhengHei", sans-serif;
             scroll-behavior: smooth;
         }
-
-        /* 標題則使用優雅的明體（Serif）作為點綴，呈現品牌質感 */
         h1, h2, h3 {
             font-family: 'Noto Serif TC', "Georgia", "Times New Roman", "華康明體", serif;
         }
-
-        .vibe-bg {
-            background-color: var(--soft-beige);
-        }
+        .vibe-bg { background-color: var(--soft-beige); }
         .glass-nav {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(15px);
@@ -44,10 +33,10 @@
             background-size: 20px 20px;
             opacity: 0.1;
         }
-        .benefit-card, .download-card {
+        .benefit-card, .download-card, .news-card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .benefit-card:hover, .download-card:hover {
+        .benefit-card:hover, .download-card:hover, .news-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(45, 90, 39, 0.08);
         }
@@ -58,11 +47,9 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 45s linear infinite;
+            animation: marquee 30s linear infinite;
         }
-        .animate-marquee:hover {
-            animation-play-state: paused;
-        }
+        .animate-marquee:hover { animation-play-state: paused; }
         #custom-modal {
             display: none;
             position: fixed;
@@ -168,24 +155,24 @@
         </div>
     </section>
 
-    <!-- 產品優點區塊 -->
+    <!-- 產品優勢區塊 -->
     <section id="benefits" class="py-24 bg-white text-center px-6">
         <h2 class="text-4xl md:text-5xl font-bold text-stone-900 mb-16 tracking-tight" data-i18n="benefitsTitle">跨國界的品質，最堅實的後盾</h2>
         <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-left">
-            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="award"></i></div>
-                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit1Title">品牌實力保證</h3>
-                <p class="text-stone-600 text-lg text-center" data-i18n="benefit1Desc">葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑，是您進軍市場最穩定的支柱。</p>
+                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit1Title">品牌實力保證</h3>
+                <p class="text-stone-600 text-lg" data-i18n="benefit1Desc">葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑。</p>
             </div>
-            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="trending-up"></i></div>
-                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit2Title">馬來西亞首波紅利</h3>
-                <p class="text-stone-600 text-lg text-center" data-i18n="benefit2Desc">2026/05 正式落地，掌握市場真空期的黃金機會，成為第一批經營領袖。</p>
+                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit2Title">馬來西亞首波紅利</h3>
+                <p class="text-stone-600 text-lg" data-i18n="benefit2Desc">2026/05 正式落地，掌握市場真空期的黃金機會。</p>
             </div>
-            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+            <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="users"></i></div>
-                <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="benefit3Title">跨國團隊資源</h3>
-                <p class="text-stone-600 text-lg text-center" data-i18n="benefit3Desc">我們提供跨國線上培訓系統，讓您在馬來西亞也能複製台灣成功的運作模式。</p>
+                <h3 class="text-2xl font-bold mb-4" data-i18n="benefit3Title">跨國團隊資源</h3>
+                <p class="text-stone-600 text-lg" data-i18n="benefit3Desc">我們提供跨國線上培訓系統，助您快速複製成功模式。</p>
             </div>
         </div>
     </section>
@@ -194,7 +181,7 @@
     <section id="philosophy" class="py-24 vibe-bg px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="relative">
-                <div class="rounded-[60px] overflow-hidden shadow-2xl">
+                <div class="rounded-[60px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
                     <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80" alt="Healthy Lifestyle">
                 </div>
                 <div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-[30px] shadow-xl border border-stone-100 hidden md:block text-center">
@@ -204,7 +191,7 @@
             </div>
             <div class="space-y-8">
                 <h2 class="text-4xl md:text-5xl font-bold leading-tight text-stone-900" data-i18n="philTitle">將這份健康與機會<br><span class="text-emerald-800">傳遞到馬來西亞</span></h2>
-                <p class="text-xl text-stone-600 leading-relaxed" data-i18n="philDesc">我們正在尋找馬來西亞志同道合的夥伴。不論您是追求個人成長、想建立被動收入，還是想把最頂級的健康產品帶給家人，葡眾馬來西亞分公司將是您展現才華的舞台。</p>
+                <p class="text-xl text-stone-600 leading-relaxed" data-i18n="philDesc">我們正在尋找馬來西亞夥伴。葡眾馬來西亞分公司將是您展現才華的舞台。</p>
                 <ul class="space-y-4">
                     <li class="flex items-center text-lg text-stone-700"><i data-lucide="check-circle" class="text-emerald-600 mr-3 w-6 h-6"></i> <span data-i18n="philFeat1">完整的馬來西亞落地法律合規保障</span></li>
                     <li class="flex items-center text-lg text-stone-700"><i data-lucide="check-circle" class="text-emerald-600 mr-3 w-6 h-6"></i> <span data-i18n="philFeat2">適合在地市場的優渥獎金制度</span></li>
@@ -214,14 +201,14 @@
         </div>
     </section>
 
-    <!-- 相關報導 -->
+    <!-- 相關報導 (恢復為原始三連結) -->
     <section id="news" class="py-24 bg-emerald-50 border-y border-emerald-100 px-6">
         <div class="max-w-7xl mx-auto mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
                 <h2 class="text-4xl font-bold text-stone-900 mb-4 flex items-center">
                     <i data-lucide="newspaper" class="mr-3 text-emerald-700"></i> <span data-i18n="newsTitle">媒體焦點 / 相關報導</span>
                 </h2>
-                <p class="text-stone-500 text-lg" data-i18n="newsSubTitle">見證葡眾領先的研發實力與市場表現</p>
+                <p class="text-stone-500 text-lg" data-i18n="newsSubTitle">透過專業媒體視角，見證葡眾的實力</p>
             </div>
             <div class="flex bg-white p-1 rounded-full shadow-sm border border-emerald-100 self-start">
                 <button id="btn-marquee" onclick="toggleNewsView('marquee')" class="px-6 py-2 rounded-full text-sm font-bold bg-emerald-800 text-white transition-all" data-i18n="newsToggleMarquee">動態展示</button>
@@ -230,54 +217,10 @@
         </div>
 
         <div id="view-marquee" class="relative overflow-hidden">
-            <div class="animate-marquee">
-                <!-- 第一組新聞：基礎內容 -->
-                <div class="flex space-x-8 px-4">
-                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
-                    </a>
-                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
-                    </a>
-                    <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
-                    </a>
-                </div>
-                <!-- 第二組新聞：重複內容，確保無縫滾動時來源標籤不遺失 -->
-                <div class="flex space-x-8 px-4">
-                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
-                    </a>
-                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
-                    </a>
-                    <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
-                        <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
-                    </a>
-                </div>
-            </div>
+            <div class="animate-marquee" id="marquee-content"></div>
         </div>
 
-        <div id="view-grid" class="hidden max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
-                <p class="text-stone-500 text-sm" data-i18n="news1Desc">解析葡眾如何憑藉生物科技基礎成為直銷佼佼者。</p>
-            </a>
-            <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
-                <p class="text-stone-500 text-sm" data-i18n="news2Desc">前3季財報表現亮眼，展現母公司雄厚財務實力。</p>
-            </a>
-            <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news3Title">屏東時報專題</h4>
-                <p class="text-stone-500 text-sm" data-i18n="news3Desc">報導葡眾如何將成功經驗從台灣推向全球市場。</p>
-            </a>
-        </div>
+        <div id="view-grid" class="hidden max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"></div>
     </section>
 
     <!-- 下載專區 -->
@@ -287,22 +230,22 @@
             <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="file-text"></i></div>
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl1Title">大馬啟動手冊</h3>
-                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
+                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400 transition-colors" data-i18n="dlBtn">施工中</button>
             </div>
             <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="package"></i></div>
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl2Title">產品完整型錄</h3>
-                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
+                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400 transition-colors" data-i18n="dlBtn">施工中</button>
             </div>
             <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="presentation"></i></div>
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl3Title">事業機會簡報</h3>
-                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
+                <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400 transition-colors" data-i18n="dlBtn">施工中</button>
             </div>
         </div>
     </section>
 
-    <!-- 聯絡表單區 -->
+    <!-- 聯絡表單 -->
     <section id="contact" class="py-32 bg-stone-50 text-center px-6">
         <h2 class="text-4xl md:text-6xl font-bold mb-8 italic text-emerald-900 leading-tight" data-i18n="contactTitle">搶占馬來西亞首波商機</h2>
         <div class="max-w-6xl mx-auto relative bg-white rounded-[70px] p-4 md:p-16 shadow-2xl border border-stone-200">
@@ -312,142 +255,127 @@
         </div>
     </section>
 
-    <!-- WhatsApp 懸浮按鈕 -->
+    <!-- WhatsApp -->
     <a id="whatsapp-btn" href="#" target="_blank" class="whatsapp-float">
         <i data-lucide="message-circle" class="w-6 h-6"></i>
         <span data-i18n="whatsappText">WhatsApp 諮詢</span>
     </a>
 
-    <!-- 頁尾 -->
     <footer class="bg-stone-900 text-stone-400 py-20 text-center px-6">
         <div class="max-w-7xl mx-auto">
             <div class="flex items-baseline justify-center mb-8">
                 <span class="text-xl font-bold text-white uppercase tracking-widest">Uvaco</span>
                 <span class="ml-2 text-lg font-medium text-emerald-500" data-i18n="brandSub">葡眾</span>
             </div>
-            <p class="text-sm border-t border-stone-800 pt-12" data-i18n="footerText">&copy; 2026 Uvaco Malaysia Founding Team | 非官方網站，由獨立代理人維護。</p>
+            <p class="text-sm border-t border-stone-800 pt-12" data-i18n="footerText">&copy; 2026 Uvaco Malaysia Founding Team</p>
         </div>
     </footer>
 
-    <!-- 自訂彈窗 -->
+    <!-- 彈窗 -->
     <div id="custom-modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="w-20 h-20 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="construction" class="w-10 h-10"></i></div>
             <h3 class="text-2xl font-bold text-stone-900 mb-4" data-i18n="modalTitle">尚未正式啟動</h3>
-            <p class="text-stone-600 mb-8 leading-relaxed text-lg" data-i18n="modalDesc">請留下聯絡方式，一起成為大馬首波核心創始成員</p>
-            <a href="#contact" onclick="closeModal()" class="px-8 py-3 bg-emerald-800 text-white rounded-full font-bold hover:bg-emerald-900 transition-all inline-block" data-i18n="modalBtn">前往留下聯絡方式</a>
+            <p class="text-stone-600 mb-8 leading-relaxed text-lg" data-i18n="modalDesc">請留下聯絡方式，成為大馬首波成員</p>
+            <a href="#contact" onclick="closeModal()" class="px-8 py-3 bg-emerald-800 text-white rounded-full font-bold hover:bg-emerald-900 transition-all inline-block" data-i18n="modalBtn">留下聯絡方式</a>
         </div>
     </div>
 
     <script>
+        const newsData = [
+            { src: 'Business Weekly', hant: '解析葡眾：如何成為台灣直銷界的科技標竿？', hans: '解析葡众：如何成为台湾直销界的科技标杆？', en: 'Pro-Partner: A Tech Benchmark in Taiwan', ms: 'Pro-Partner: Penanda Aras Teknologi Taiwan', link: 'https://www.businessweekly.com.tw/business/indep/1005806' },
+            { src: 'LTN NEWS', hant: '葡眾獲利亮眼：每股賺6.58元', hans: '葡众获利亮眼：每股赚6.58元', en: 'Pro-Partner Earnings: EPS 6.58 TWD', ms: 'Keuntungan Pro-Partner: EPS 6.58 TWD', link: 'https://ec.ltn.com.tw/article/breakingnews/5117185' },
+            { src: 'Pingtung Times', hant: '葡眾深耕在地、邁向國際：創新模式引領轉型', hans: '葡众深耕在地、邁向国际：创新模式引领转型', en: 'Innovation in Direct Selling: Global Reach', ms: 'Inovasi dalam Jualan Langsung: Jangkauan Global', link: 'https://pingtungtimes.com.tw/?p=348385' }
+        ];
+
         const i18n = {
             "zh-Hant": {
-                "newMarket": "New Market",
-                "announcementText": "🇲🇾 2026/05 葡眾馬來西亞正式啟動！首波核心創始成員火熱招募中",
-                "brandSub": "葡眾",
-                "navBenefits": "產品優勢", "navPhilosophy": "品牌理念", "navNews": "相關報導", "navDownloads": "資源下載", "navJoin": "搶先佈局大馬",
+                "newMarket": "New Market", "announcementText": "🇲🇾 2026/05 葡眾馬來西亞正式啟動！首波核心創始成員火熱招募中",
+                "brandSub": "葡眾", "navBenefits": "產品優勢", "navPhilosophy": "品牌理念", "navNews": "相關報導", "navDownloads": "資源下載", "navJoin": "搶先佈局大馬",
                 "heroTitle": "立足台灣，<br><span class='text-emerald-800'>贏向馬來西亞</span>",
                 "heroDesc": "葡眾正式邁向國際！2026 年 5 月馬來西亞首站啟動。這不僅是健康的傳遞，更是您掌握「全球第一波」創始紅利的絕佳時機。",
                 "heroBtnPrimary": "加入大馬創始團隊", "heroBtnSecondary": "了解成功系統",
                 "benefitsTitle": "跨國界的品質，最堅實的後盾",
                 "benefit1Title": "品牌實力保證", "benefit1Desc": "葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑。",
                 "benefit2Title": "馬來西亞首波紅利", "benefit2Desc": "2026/05 正式落地，掌握市場真空期的黃金機會。",
-                "benefit3Title": "跨國團隊資源", "benefit3Desc": "提供跨國培訓系統，在馬來西亞也能複製台灣成功模式。",
+                "benefit3Title": "跨國團隊資源", "benefit3Desc": "提供跨國培訓系統，助您快速複製成功模式。",
                 "philTitle": "將這份健康與機會<br><span class='text-emerald-800'>傳遞到馬來西亞</span>",
-                "philDesc": "我們正在尋找馬來西亞志同道合的夥伴。葡眾馬來西亞分公司將是您展現才華的舞台。",
+                "philDesc": "我們正在尋找馬來西亞夥伴。葡眾將是您展現才華的舞台。",
                 "philDate": "2026.05", "philComing": "正式啟動",
-                "philFeat1": "完整的落地法律合規保障", "philFeat2": "適合在地市場的獎金制度", "philFeat3": "專業且充滿活力的教練團隊",
+                "philFeat1": "完整的落地法律保障", "philFeat2": "適合在地市場的獎金制度", "philFeat3": "專業活力教練團隊",
                 "newsTitle": "媒體焦點 / 相關報導", "newsSubTitle": "見證葡眾領先的研發實力與市場表現",
                 "newsToggleMarquee": "動態展示", "newsToggleGrid": "網格導覽",
-                "news1Title": "解析葡眾：如何成為台灣直銷界的科技標竿？", "news1Desc": "解析葡眾如何憑藉生物科技基礎成為直銷佼佼者。",
-                "news2Title": "葡眾前3季財報表現亮眼：每股賺6.58元", "news2Desc": "營收亮眼，展現母公司雄厚財務實力。",
-                "news3Title": "葡眾深耕在地、邁向國際：創新模式引領轉型", "news3Desc": "報導葡眾如何將成功經驗從台灣推向全球市場。",
                 "downloadTitle": "資源下載專區", "dlBtn": "施工中", "dl1Title": "大馬啟動手冊", "dl2Title": "產品完整型錄", "dl3Title": "事業機會簡報",
                 "contactTitle": "搶占馬來西亞首波商機",
-                "whatsappText": "WhatsApp 諮詢",
-                "whatsappMsg": "您好，我想了解葡眾馬來西亞計畫",
-                "modalTitle": "尚未正式啟動", "modalDesc": "請留下聯絡方式，一起成為大馬首波核心創始成員", "modalBtn": "前往留下聯絡方式",
-                "footerText": "© 2026 Uvaco Malaysia Founding Team | 非官方網站，由獨立代理人維護。"
+                "whatsappText": "WhatsApp 諮詢", "whatsappMsg": "您好，我想了解葡眾馬來西亞計畫",
+                "modalTitle": "尚未正式啟動", "modalDesc": "請留下聯絡方式，成為大馬首波成員", "modalBtn": "留下聯絡方式",
+                "footerText": "© 2026 Uvaco Malaysia Founding Team | 非官方網站。"
             },
             "zh-Hans": {
-                "newMarket": "New Market",
-                "announcementText": "🇲🇾 2026/05 葡众马来西亚正式启动！首波核心创始成员火热招募中",
-                "brandSub": "葡众",
-                "navBenefits": "产品优势", "navPhilosophy": "品牌理念", "navNews": "相关报道", "navDownloads": "资源下载", "navJoin": "抢先布局大马",
+                "newMarket": "New Market", "announcementText": "🇲🇾 2026/05 葡众马来西亚正式启动！首波核心创始成员火热招募中",
+                "brandSub": "葡众", "navBenefits": "产品优势", "navPhilosophy": "品牌理念", "navNews": "相关报道", "navDownloads": "资源下载", "navJoin": "抢先布局大马",
                 "heroTitle": "立足台湾，<br><span class='text-emerald-800'>赢向马来西亚</span>",
                 "heroDesc": "葡众正式走向国际！2026 年 5 月马来西亚首站启动。这不仅是健康的传递，更是您掌握“全球第一波”创始红利的绝佳时机。",
                 "heroBtnPrimary": "加入大马创始团队", "heroBtnSecondary": "了解成功系统",
                 "benefitsTitle": "跨国界的品质，最坚实的後盾",
                 "benefit1Title": "品牌实力保证", "benefit1Desc": "葡众身为台湾直销龙头企业，拥有数十年的诚信口碑。",
                 "benefit2Title": "马来西亚首波红利", "benefit2Desc": "2026/05 正式落地，掌握市场真空期的黄金机会。",
-                "benefit3Title": "跨国团队资源", "benefit3Desc": "提供跨国培训系统，在马来西亚也能复制台湾成功模式。",
+                "benefit3Title": "跨国团队资源", "benefit3Desc": "提供跨国培训系统，助您快速复制成功模式。",
                 "philTitle": "将这份健康与机会<br><span class='text-emerald-800'>传递到马来西亚</span>",
-                "philDesc": "我们正在寻找马来西亚志同道合的夥伴。葡众马来西亚分公司将是您展现才华的舞台。",
+                "philDesc": "我们正在寻找马来西亚夥伴。葡众将是您展现才华的舞台。",
                 "philDate": "2026.05", "philComing": "正式启动",
-                "philFeat1": "完整的落地法律合规保障", "philFeat2": "适合在地市场的奖金制度", "philFeat3": "专业且充满活力的教练团队",
+                "philFeat1": "完整的落地法律保障", "philFeat2": "适合在地市场的奖金制度", "philFeat3": "专业活力教练团队",
                 "newsTitle": "媒体焦点 / 相关报道", "newsSubTitle": "见证葡众领先的研发实力与市场表现",
                 "newsToggleMarquee": "动态展示", "newsToggleGrid": "网格导引",
-                "news1Title": "解析葡众：如何成为台湾直销界的科技标杆？", "news1Desc": "解析葡众如何凭借生物科技基础成为直销佼佼者。",
-                "news2Title": "葡众前3季财报表现亮丽：每股赚6.58元", "news2Desc": "营收亮丽，展现母公司雄厚财务实力。",
-                "news3Title": "葡众深耕在地、迈向国际：创新模式引领转型", "news3Desc": "报道葡众如何将成功经验从台湾推向全球市场。",
-                "downloadTitle": "资源下载专区", "dlBtn": "施工中", "dl1Title": "大马启动手册", "dl2Title": "产品完整名录", "dl3Title": "事业机会简报",
+                "downloadTitle": "資源下載專區", "dlBtn": "施工中", "dl1Title": "大馬啟動手冊", "dl2Title": "產品完整型錄", "dl3Title": "事業機會簡報",
                 "contactTitle": "抢占马来西亚首波商机",
-                "whatsappText": "WhatsApp 咨询",
-                "whatsappMsg": "您好，我想了解葡众马来西亚计划",
-                "modalTitle": "尚未正式启动", "modalDesc": "请留下联系方式，一起成为大马首波核心创始成员", "modalBtn": "前往留下联系方式",
-                "footerText": "© 2026 Uvaco Malaysia Founding Team | 非官方网站，由独立代理人维护。"
+                "whatsappText": "WhatsApp 咨询", "whatsappMsg": "您好，我想了解葡众马来西亚计划",
+                "modalTitle": "尚未正式启动", "modalDesc": "请留下联系方式，成为大马首波成员", "modalBtn": "留下联系方式",
+                "footerText": "© 2026 Uvaco Malaysia Founding Team | 非官方網站。"
             },
             "en": {
-                "newMarket": "New Market",
-                "announcementText": "🇲🇾 May 2026: Pro-Partner Malaysia officially launches! Founding members recruitment",
-                "brandSub": "Pro-Partner",
-                "navBenefits": "Benefits", "navPhilosophy": "Philosophy", "navNews": "News", "navDownloads": "Downloads", "navJoin": "Join Team",
+                "newMarket": "New Market", "announcementText": "🇲🇾 May 2026: Pro-Partner Malaysia officially launches! Recruiting founding members",
+                "brandSub": "Pro-Partner", "navBenefits": "Benefits", "navPhilosophy": "Philosophy", "navNews": "News", "navDownloads": "Downloads", "navJoin": "Join Team",
                 "heroTitle": "Based in Taiwan,<br><span class='text-emerald-800'>Winning in Malaysia</span>",
                 "heroDesc": "Pro-Partner goes global! Launching in Malaysia May 2026. Seize the 'First Wave' opportunity now.",
-                "heroBtnPrimary": "Join Founding Team", "heroBtnSecondary": "Our System",
+                "heroBtnPrimary": "Join Founding Team", "heroBtnSecondary": "System",
                 "benefitsTitle": "Global Quality, Solid Support",
-                "benefit1Title": "Brand Reliability", "benefit1Desc": "Decades of trust as Taiwan's leading direct selling enterprise.",
-                "benefit2Title": "First-Wave Dividend", "benefit2Desc": "Official launch May 2026. Capture the market vacancy gold rush.",
-                "benefit3Title": "Global Resources", "benefit3Desc": "Global online training to replicate Taiwan's success in Malaysia.",
+                "benefit1Title": "Reliability", "benefit1Desc": "Decades of trust as Taiwan's leading direct selling enterprise.",
+                "benefit2Title": "First Dividend", "benefit2Desc": "Official launch May 2026. Capture the market gold rush.",
+                "benefit3Title": "Global Support", "benefit3Desc": "Online training to replicate Taiwan's success in Malaysia.",
                 "philTitle": "Bringing Wellness &<br><span class='text-emerald-800'>Opportunity to Malaysia</span>",
-                "philDesc": "Seeking like-minded partners in Malaysia. Pro-Partner Malaysia is your stage to shine.",
+                "philDesc": "Seeking partners in Malaysia. Pro-Partner is your stage to shine.",
                 "philDate": "2026.05", "philComing": "Launching",
-                "philFeat1": "Full legal & compliance protection", "philFeat2": "Lucrative local compensation plan", "philFeat3": "Professional & vibrant coaching team",
-                "newsTitle": "Media Focus / Reports", "newsSubTitle": "Witness Pro-Partner's leading R&D and market performance",
+                "philFeat1": "Full legal compliance", "philFeat2": "Local compensation plan", "philFeat3": "Professional coaching",
+                "newsTitle": "Media Focus", "newsSubTitle": "Witness Pro-Partner's leading R&D and market performance",
                 "newsToggleMarquee": "Marquee", "newsToggleGrid": "Grid View",
-                "news1Title": "Analyzing Pro-Partner: A Tech Benchmark in Taiwan", "news2Title": "Pro-Partner Q3 Results: EPS 6.58 TWD", "news3Title": "Deep Roots to Global Reach: Innovation in Direct Selling",
-                "downloadTitle": "Resource Center", "dlBtn": "Pending", "dl1Title": "Launch Manual", "dl2Title": "Product Catalog", "dl3Title": "Opportunity Deck",
-                "contactTitle": "Seize the Malaysia First Wave",
-                "whatsappText": "WhatsApp Us",
-                "whatsappMsg": "Hi, I'm interested in the Pro-Partner Malaysia plan.",
-                "modalTitle": "Not Yet Launched", "modalDesc": "Leave your contact info to join our first-wave core founding team.", "modalBtn": "Contact Us",
-                "footerText": "© 2026 Uvaco Malaysia Founding Team | Unofficial site maintained by independent agents."
+                "downloadTitle": "Resources", "dlBtn": "Pending", "dl1Title": "Launch Manual", "dl2Title": "Catalog", "dl3Title": "Opportunity Deck",
+                "contactTitle": "Seize the Malaysia Opportunity",
+                "whatsappText": "WhatsApp Us", "whatsappMsg": "Hi, I'm interested in the Pro-Partner Malaysia plan.",
+                "modalTitle": "Not Yet Launched", "modalDesc": "Leave your info to join our first-wave team.", "modalBtn": "Contact Us",
+                "footerText": "© 2026 Uvaco Malaysia Founding Team | Unofficial site."
             },
             "ms": {
-                "newMarket": "Pasaran Baru",
-                "announcementText": "🇲🇾 Mei 2026: Pro-Partner Malaysia dilancarkan secara rasmi! Sertai ahli pengasas",
-                "brandSub": "Pro-Partner",
-                "navBenefits": "Kelebihan", "navPhilosophy": "Falsafah", "navNews": "Berita", "navDownloads": "Muat Turun", "navJoin": "Sertai Kami",
+                "newMarket": "Pasaran Baru", "announcementText": "🇲🇾 Mei 2026: Pro-Partner Malaysia dilancarkan secara rasmi!",
+                "brandSub": "Pro-Partner", "navBenefits": "Kelebihan", "navPhilosophy": "Falsafah", "navNews": "Berita", "navDownloads": "Muat Turun", "navJoin": "Sertai Kami",
                 "heroTitle": "Berasas di Taiwan,<br><span class='text-emerald-800'>Menang di Malaysia</span>",
                 "heroDesc": "Pro-Partner menjadi global! Pelancaran di Malaysia Mei 2026. Rebut peluang 'Gelombang Pertama' sekarang.",
-                "heroBtnPrimary": "Sertai Pasukan Pengasas", "heroBtnSecondary": "Sistem Kami",
+                "heroBtnPrimary": "Sertai Pasukan", "heroBtnSecondary": "Sistem Kami",
                 "benefitsTitle": "Kualiti Global, Sokongan Padu",
-                "benefit1Title": "Kredibiliti Jenama", "benefit1Desc": "Berdekad-dekad kepercayaan sebagai peneraju jualan langsung di Taiwan.",
-                "benefit2Title": "Dividen Pertama", "benefit2Desc": "Pelancaran rasmi Mei 2026. Rebut peluang pasaran kosong.",
-                "benefit3Title": "Sumber Global", "benefit3Desc": "Latihan dalam talian global untuk meniru kejayaan Taiwan di Malaysia.",
+                "benefit1Title": "Kredibiliti", "benefit1Desc": "Berdekad kepercayaan sebagai peneraju jualan langsung Taiwan.",
+                "benefit2Title": "Dividen Pertama", "benefit2Desc": "Pelancaran rasmi Mei 2026. Rebut peluang pasaran.",
+                "benefit3Title": "Sumber Global", "benefit3Desc": "Latihan dalam talian untuk kejayaan di Malaysia.",
                 "philTitle": "Membawa Kesihatan &<br><span class='text-emerald-800'>Peluang ke Malaysia</span>",
-                "philDesc": "Mencari rakan kongsi yang sehaluan di Malaysia. Pro-Partner Malaysia adalah pentas anda.",
+                "philDesc": "Mencari rakan kongsi di Malaysia. Pro-Partner adalah pentas anda.",
                 "philDate": "2026.05", "philComing": "Pelancaran",
-                "philFeat1": "Perlindungan undang-undang & pematuhan penuh", "philFeat2": "Pelan pampasan tempatan yang lumayan", "philFeat3": "Pasukan bimbingan yang profesional & bertenaga",
-                "newsTitle": "Fokus Media / Laporan", "newsSubTitle": "Saksikan kehebatan R&D dan prestasi pasaran Pro-Partner",
-                "newsToggleMarquee": "Pertunjukan", "newsToggleGrid": "Paparan Grid",
-                "news1Title": "Analisis Pro-Partner: Penanda Aras Teknologi di Taiwan", "news2Title": "Keputusan Suku Ke-3 Pro-Partner: EPS 6.58 TWD", "news3Title": "Akar Umbi ke Global: Inovasi dalam Jualan Langsung",
-                "downloadTitle": "Pusat Muat Turun", "dlBtn": "Sedang Dibina", "dl1Title": "Manual Pelancaran", "dl2Title": "Katalog Produk", "dl3Title": "Dek Peluang",
-                "contactTitle": "Rebut Gelombang Pertama Malaysia",
-                "whatsappText": "Hubungi WhatsApp",
-                "whatsappMsg": "Halo, saya berminat dengan rancangan Pro-Partner Malaysia.",
-                "modalTitle": "Belum Dilancarkan", "modalDesc": "Tinggalkan maklumat untuk sertai pasukan pengasas teras pertama kami.", "modalBtn": "Hubungi Kami",
-                "footerText": "© 2026 Pasukan Pengasas Uvaco Malaysia | Laman web tidak rasmi diselenggara oleh ejen bebas."
+                "philFeat1": "Pematuhan undang-undang penuh", "philFeat2": "Pelan pampasan tempatan", "philFeat3": "Pasukan bimbingan profesional",
+                "newsTitle": "Fokus Media", "newsSubTitle": "Saksikan kehebatan R&D dan prestasi pasaran Pro-Partner",
+                "newsToggleMarquee": "Pertunjukan", "newsToggleGrid": "Grid View",
+                "downloadTitle": "Muat Turun", "dlBtn": "Dibina", "dl1Title": "Manual Pelancaran", "dl2Title": "Katalog Produk", "dl3Title": "Slaid Peluang",
+                "contactTitle": "Rebut Peluang Pertama Malaysia",
+                "whatsappText": "WhatsApp", "whatsappMsg": "Halo, saya berminat dengan rancangan Pro-Partner Malaysia.",
+                "modalTitle": "Belum Dilancarkan", "modalDesc": "Tinggalkan maklumat untuk sertai pasukan kami.", "modalBtn": "Hubungi Kami",
+                "footerText": "© 2026 Pasukan Pengasas Uvaco Malaysia | Laman web tidak rasmi."
             }
         };
 
@@ -455,21 +383,54 @@
 
         function changeLanguage(lang) {
             currentLang = lang;
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(el => {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (i18n[lang][key]) { el.innerHTML = i18n[lang][key]; }
+                if (i18n[lang][key]) el.innerHTML = i18n[lang][key];
             });
             document.documentElement.lang = lang;
+            renderNews();
             updateWhatsAppLink();
+        }
+
+        function renderNews() {
+            const marquee = document.getElementById('marquee-content');
+            const grid = document.getElementById('view-grid');
+            
+            // 渲染跑馬燈
+            let newsHTML = '<div class="flex space-x-8 px-4">';
+            newsData.forEach(item => {
+                newsHTML += `
+                    <a href="${item.link}" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 min-w-[450px] transition-transform hover:scale-[1.02]">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-emerald-700 font-bold text-lg uppercase">${item.src}</span>
+                            <i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i>
+                        </div>
+                        <h4 class="font-bold text-xl">${item[currentLang] || item.hant}</h4>
+                    </a>`;
+            });
+            newsHTML += '</div>';
+            marquee.innerHTML = newsHTML + newsHTML; 
+
+            // 渲染網格
+            let gridHTML = '';
+            newsData.forEach(item => {
+                gridHTML += `
+                    <a href="${item.link}" target="_blank" class="news-card bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 shadow-sm block">
+                        <div class="text-emerald-600 text-xs font-bold mb-2 uppercase">${item.src}</div>
+                        <h4 class="text-lg font-bold mb-4">${item[currentLang] || item.hant}</h4>
+                        <div class="text-emerald-800 text-sm font-medium flex items-center">
+                            Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </a>`;
+            });
+            grid.innerHTML = gridHTML;
+            lucide.createIcons();
         }
 
         function updateWhatsAppLink() {
             const btn = document.getElementById('whatsapp-btn');
             const msg = encodeURIComponent(i18n[currentLang].whatsappMsg);
-            // 替換為您的國際電話號碼 (例如 886908985002)
-            const phone = "886908985002";
-            btn.href = `https://wa.me/${phone}?text=${msg}`;
+            btn.href = `https://wa.me/886908985002?text=${msg}`;
         }
 
         function toggleNewsView(view) {
@@ -489,11 +450,9 @@
         function openModal() { document.getElementById('custom-modal').style.display = 'flex'; }
         function closeModal() { document.getElementById('custom-modal').style.display = 'none'; }
         
-        // 初始載入
-        lucide.createIcons();
+        renderNews();
         updateWhatsAppLink();
+        lucide.createIcons();
     </script>
 </body>
 </html>
-
-
