@@ -9,6 +9,7 @@
     <title>Uvaco | Pro-Partner Malaysia 2026</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入高品質 Noto Sans TC & Serif TC 作為現代化基準 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Lucide 圖示庫 -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -17,13 +18,19 @@
             --primary-green: #2d5a27;
             --soft-beige: #fdfaf6;
         }
+        
+        /* 替換字體為現代通用黑體系統：
+           優先使用 Noto Sans TC，後接 Apple 系統字、微軟正黑體 */
         body {
-            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "PingFang SC", "Microsoft JhengHei", sans-serif;
             scroll-behavior: smooth;
         }
+
+        /* 標題則使用優雅的明體（Serif）作為點綴，呈現品牌質感 */
         h1, h2, h3 {
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Noto Serif TC', "Georgia", "Times New Roman", "華康明體", serif;
         }
+
         .vibe-bg {
             background-color: var(--soft-beige);
         }
@@ -51,7 +58,7 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 40s linear infinite;
+            animation: marquee 45s linear infinite;
         }
         .animate-marquee:hover {
             animation-play-state: paused;
@@ -75,7 +82,6 @@
             text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
-        /* WhatsApp 懸浮按鈕樣式 */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -198,7 +204,7 @@
             </div>
             <div class="space-y-8">
                 <h2 class="text-4xl md:text-5xl font-bold leading-tight text-stone-900" data-i18n="philTitle">將這份健康與機會<br><span class="text-emerald-800">傳遞到馬來西亞</span></h2>
-                <p class="text-xl text-stone-600 leading-relaxed" data-i18n="philDesc">我們正在尋找馬來西亞志同道合的夥伴。葡眾馬來西亞分公司將是您展現才華的舞台。</p>
+                <p class="text-xl text-stone-600 leading-relaxed" data-i18n="philDesc">我們正在尋找馬來西亞志同道合的夥伴。不論您是追求個人成長、想建立被動收入，還是想把最頂級的健康產品帶給家人，葡眾馬來西亞分公司將是您展現才華的舞台。</p>
                 <ul class="space-y-4">
                     <li class="flex items-center text-lg text-stone-700"><i data-lucide="check-circle" class="text-emerald-600 mr-3 w-6 h-6"></i> <span data-i18n="philFeat1">完整的馬來西亞落地法律合規保障</span></li>
                     <li class="flex items-center text-lg text-stone-700"><i data-lucide="check-circle" class="text-emerald-600 mr-3 w-6 h-6"></i> <span data-i18n="philFeat2">適合在地市場的優渥獎金制度</span></li>
@@ -225,23 +231,35 @@
 
         <div id="view-marquee" class="relative overflow-hidden">
             <div class="animate-marquee">
+                <!-- 第一組新聞：基礎內容 -->
                 <div class="flex space-x-8 px-4">
                     <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
                     </a>
                     <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
                     </a>
                     <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
                     </a>
                 </div>
+                <!-- 第二組新聞：重複內容，確保無縫滾動時來源標籤不遺失 -->
                 <div class="flex space-x-8 px-4">
-                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl min-w-[500px]"><h4 class="font-bold text-xl" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4></a>
-                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl min-w-[500px]"><h4 class="font-bold text-xl" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4></a>
+                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
+                    </a>
+                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
+                    </a>
+                    <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300 group-hover:text-emerald-600"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
+                    </a>
                 </div>
             </div>
         </div>
@@ -294,8 +312,8 @@
         </div>
     </section>
 
-    <!-- WhatsApp 懸浮按鈕 (馬來西亞必備) -->
-    <a id="whatsapp-btn" href="https://wa.me/你的電話號碼?text=我想了解葡眾馬來西亞計畫" target="_blank" class="whatsapp-float">
+    <!-- WhatsApp 懸浮按鈕 -->
+    <a id="whatsapp-btn" href="#" target="_blank" class="whatsapp-float">
         <i data-lucide="message-circle" class="w-6 h-6"></i>
         <span data-i18n="whatsappText">WhatsApp 諮詢</span>
     </a>
@@ -341,7 +359,9 @@
                 "philFeat1": "完整的落地法律合規保障", "philFeat2": "適合在地市場的獎金制度", "philFeat3": "專業且充滿活力的教練團隊",
                 "newsTitle": "媒體焦點 / 相關報導", "newsSubTitle": "見證葡眾領先的研發實力與市場表現",
                 "newsToggleMarquee": "動態展示", "newsToggleGrid": "網格導覽",
-                "news1Title": "解析葡眾：如何成為台灣直銷界的科技標竿？", "news2Title": "葡眾前3季財報表現亮眼：每股賺6.58元", "news3Title": "葡眾深耕在地、邁向國際：創新模式引領轉型",
+                "news1Title": "解析葡眾：如何成為台灣直銷界的科技標竿？", "news1Desc": "解析葡眾如何憑藉生物科技基礎成為直銷佼佼者。",
+                "news2Title": "葡眾前3季財報表現亮眼：每股賺6.58元", "news2Desc": "營收亮眼，展現母公司雄厚財務實力。",
+                "news3Title": "葡眾深耕在地、邁向國際：創新模式引領轉型", "news3Desc": "報導葡眾如何將成功經驗從台灣推向全球市場。",
                 "downloadTitle": "資源下載專區", "dlBtn": "施工中", "dl1Title": "大馬啟動手冊", "dl2Title": "產品完整型錄", "dl3Title": "事業機會簡報",
                 "contactTitle": "搶占馬來西亞首波商機",
                 "whatsappText": "WhatsApp 諮詢",
@@ -367,7 +387,9 @@
                 "philFeat1": "完整的落地法律合规保障", "philFeat2": "适合在地市场的奖金制度", "philFeat3": "专业且充满活力的教练团队",
                 "newsTitle": "媒体焦点 / 相关报道", "newsSubTitle": "见证葡众领先的研发实力与市场表现",
                 "newsToggleMarquee": "动态展示", "newsToggleGrid": "网格导引",
-                "news1Title": "解析葡众：如何成为台湾直销界的科技标杆？", "news2Title": "葡众前3季财报表现亮丽：每股赚6.58元", "news3Title": "葡众深耕在地、迈向国际：创新模式引领转型",
+                "news1Title": "解析葡众：如何成为台湾直销界的科技标杆？", "news1Desc": "解析葡众如何凭借生物科技基础成为直销佼佼者。",
+                "news2Title": "葡众前3季财报表现亮丽：每股赚6.58元", "news2Desc": "营收亮丽，展现母公司雄厚财务实力。",
+                "news3Title": "葡众深耕在地、迈向国际：创新模式引领转型", "news3Desc": "报道葡众如何将成功经验从台湾推向全球市场。",
                 "downloadTitle": "资源下载专区", "dlBtn": "施工中", "dl1Title": "大马启动手册", "dl2Title": "产品完整名录", "dl3Title": "事业机会简报",
                 "contactTitle": "抢占马来西亚首波商机",
                 "whatsappText": "WhatsApp 咨询",
@@ -445,8 +467,9 @@
         function updateWhatsAppLink() {
             const btn = document.getElementById('whatsapp-btn');
             const msg = encodeURIComponent(i18n[currentLang].whatsappMsg);
-            // 請在此處填入您的國際電話號碼 (例如 886912345678)
-            btn.href = `https://wa.me/請輸入您的電話號碼?text=${msg}`;
+            // 替換為您的國際電話號碼 (例如 886908985002)
+            const phone = "886908985002";
+            btn.href = `https://wa.me/${phone}?text=${msg}`;
         }
 
         function toggleNewsView(view) {
@@ -465,8 +488,10 @@
 
         function openModal() { document.getElementById('custom-modal').style.display = 'flex'; }
         function closeModal() { document.getElementById('custom-modal').style.display = 'none'; }
+        
+        // 初始載入
         lucide.createIcons();
-        updateWhatsAppLink(+886908985002);
+        updateWhatsAppLink();
     </script>
 </body>
 </html>
