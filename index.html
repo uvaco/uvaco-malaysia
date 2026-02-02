@@ -47,7 +47,7 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 45s linear infinite;
+            animation: marquee 40s linear infinite;
         }
         .animate-marquee:hover {
             animation-play-state: paused;
@@ -86,13 +86,13 @@
     <!-- 導覽列 -->
     <nav class="sticky top-0 w-full z-50 glass-nav border-b border-stone-200/50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- 品牌 Logo：已具備懸停效果 -->
+            <!-- 品牌 Logo -->
             <a href="https://uvaco.info" class="flex items-baseline group transition-transform hover:scale-105 duration-200">
                 <span class="text-2xl font-bold tracking-widest text-emerald-900 uppercase">Uvaco</span>
                 <span class="ml-2 text-xl font-medium text-emerald-700" data-i18n="brandSub">葡眾</span>
             </a>
             
-            <!-- 選單項目：加入懸停縮放效果 -->
+            <!-- 選單項目 -->
             <div class="hidden lg:flex space-x-8 font-bold text-xl text-stone-600">
                 <a href="#benefits" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navBenefits">產品優勢</a>
                 <a href="#philosophy" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navPhilosophy">品牌理念</a>
@@ -101,14 +101,12 @@
             </div>
 
             <div class="flex items-center space-x-4">
-                <!-- 語言切換選單：加入懸停縮放效果 -->
                 <select onchange="changeLanguage(this.value)" class="bg-transparent border border-stone-300 rounded-full px-3 py-1 text-sm font-bold text-stone-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer transition-transform hover:scale-105 duration-200">
                     <option value="zh-Hant">繁體</option>
                     <option value="zh-Hans">简体</option>
                     <option value="en">EN</option>
                     <option value="ms">BM</option>
                 </select>
-                <!-- 加入按鈕：加入懸停縮放效果 -->
                 <a href="#contact" class="hidden sm:block px-6 py-2.5 bg-emerald-800 text-white rounded-full font-medium hover:bg-emerald-900 shadow-md transition-all hover:scale-105 duration-200" data-i18n="navJoin">
                     搶先佈局大馬
                 </a>
@@ -116,7 +114,7 @@
         </div>
     </nav>
 
-    <!-- 主視覺區 (Hero) -->
+    <!-- 主視覺區 -->
     <section class="relative pt-24 pb-20 md:pt-40 md:pb-32 overflow-hidden text-center">
         <div class="absolute inset-0 hero-pattern pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -204,38 +202,50 @@
 
         <div id="view-marquee" class="relative overflow-hidden">
             <div class="animate-marquee">
+                <!-- 第一組新聞 (原始組) -->
                 <div class="flex space-x-8 px-4">
                     <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
                         <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
                     </a>
                     <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span></div>
+                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
                     </a>
                     <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
-                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span></div>
+                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
                         <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
                     </a>
                 </div>
+                <!-- 第二組新聞 (複製組 - 用於無縫滾動，現在已完整修復) -->
                 <div class="flex space-x-8 px-4">
-                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm min-w-[500px]"><h4 class="font-bold text-xl" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4></a>
-                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm min-w-[500px]"><h4 class="font-bold text-xl" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4></a>
+                    <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-emerald-700 font-black text-2xl uppercase">Business Weekly</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
+                    </a>
+                    <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-blue-700 font-black text-2xl uppercase">LTN NEWS</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
+                    </a>
+                    <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="flex flex-col bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-emerald-100 group min-w-[500px]">
+                        <div class="flex justify-between items-start mb-6"><span class="text-orange-600 font-black text-2xl uppercase">Pingtung Times</span><i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i></div>
+                        <h4 class="font-bold text-xl mb-3" data-i18n="news3Title">葡眾深耕在地、邁向國際：創新模式引領轉型</h4>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div id="view-grid" class="hidden max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
             <a href="https://www.businessweekly.com.tw/business/indep/1005806" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
+                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news1Title">解析葡眾：如何成為台灣直銷界的科技標竿？</h4>
                 <p class="text-stone-500 text-sm" data-i18n="news1Desc">解析葡眾如何憑藉生物科技基礎成為直銷佼佼者。</p>
             </a>
             <a href="https://ec.ltn.com.tw/article/breakingnews/5117185" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
+                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news2Title">葡眾前3季財報表現亮眼：每股賺6.58元</h4>
                 <p class="text-stone-500 text-sm" data-i18n="news2Desc">前3季財報表現亮眼，展現母公司雄厚財務實力。</p>
             </a>
             <a href="https://pingtungtimes.com.tw/?p=348385" target="_blank" class="bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 transition-all group shadow-sm">
-                <h4 class="text-xl font-bold mb-4" data-i18n="news3Title">屏東時報專題</h4>
+                <h4 class="text-xl font-bold mb-4 group-hover:text-emerald-800 leading-tight" data-i18n="news3Title">屏東時報專題</h4>
                 <p class="text-stone-500 text-sm" data-i18n="news3Desc">報導葡眾如何將成功經驗從台灣推向全球市場。</p>
             </a>
         </div>
@@ -255,7 +265,7 @@
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl2Title">產品完整型錄</h3>
                 <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
             </div>
-            <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100">
+            <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
                 <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="presentation"></i></div>
                 <h3 class="text-xl font-bold mb-2" data-i18n="dl3Title">事業機會簡報</h3>
                 <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold" data-i18n="dlBtn">施工中</button>
