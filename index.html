@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UVACO Pro-Partner Malaysia 2026 Official Launch. Join the first wave of core founding members. 葡眾馬來西亞 2026 正式啟動。">
-    <title>UVACO | Pro-Partner Malaysia 2026</title>
+    <!-- SEO 優化：搜尋引擎顯示標題改為 UVACO (葡眾) -->
+    <meta name="description" content="UVACO (葡眾) Pro-Partner Malaysia 2026 Official Launch. Join the first wave of core founding members. 葡眾馬來西亞 2026 正式啟動。">
+    <meta name="keywords" content="UVACO (葡眾), UVACO Malaysia, 葡眾馬來西亞, Pro-Partner Malaysia, 創業機會">
+    <title>UVACO (葡眾) | Pro-Partner Malaysia 2026</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -107,7 +109,7 @@
                 <span class="ml-2 text-xl font-medium text-emerald-700" data-i18n="brandSub">葡眾</span>
             </a>
             
-            <!-- 選單項目：品牌理念、產品優勢、創業制度、相關報導 -->
+            <!-- 選單項目：依序為 品牌理念、產品優勢、創業制度、相關報導 -->
             <div class="hidden lg:flex items-center space-x-8 font-bold text-stone-600">
                 <a href="#philosophy" onclick="showPage('home')" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navPhilosophy">品牌理念</a>
                 <a href="#benefits" onclick="showPage('home')" class="transition-all hover:text-emerald-800 hover:scale-105 duration-200" data-i18n="navBenefits">產品優勢</a>
@@ -123,13 +125,15 @@
                     <option value="ms">BM</option>
                 </select>
                 <a href="#contact" class="hidden sm:block px-5 py-2 bg-emerald-800 text-white rounded-full text-sm font-bold hover:bg-emerald-900 shadow-md transition-all hover:scale-105 duration-200" data-i18n="navJoin">搶先佈局</a>
+                
+                <!-- 手機版漢堡按鈕 -->
                 <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-emerald-900 focus:outline-none">
                     <i id="menu-icon" data-lucide="menu"></i>
                 </button>
             </div>
         </div>
 
-        <!-- 手機版選單 -->
+        <!-- 手機版選單展開區塊 -->
         <div id="mobile-menu-overlay" class="hidden lg:hidden bg-white border-b border-stone-100 py-6 px-6 space-y-4 shadow-xl">
             <a href="#philosophy" onclick="showPage('home');toggleMobileMenu()" class="block text-xl font-bold text-stone-700" data-i18n="navPhilosophy">品牌理念</a>
             <a href="#benefits" onclick="showPage('home');toggleMobileMenu()" class="block text-xl font-bold text-stone-700" data-i18n="navBenefits">產品優勢</a>
@@ -157,7 +161,7 @@
             </div>
         </section>
 
-        <!-- 1. 品牌理念 (移至最前) -->
+        <!-- 1. 品牌理念 -->
         <section id="philosophy" class="py-24 vibe-bg px-6">
             <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
                 <div class="relative">
@@ -184,18 +188,18 @@
         <!-- 2. 產品優勢 -->
         <section id="benefits" class="py-24 bg-white text-center px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-stone-900 mb-16 tracking-tight" data-i18n="benefitsTitle">跨國界的品質，最堅實的後盾</h2>
-            <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+            <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-left">
+                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="award"></i></div>
                     <h3 class="text-2xl font-bold mb-4" data-i18n="benefit1Title">品牌實力保證</h3>
                     <p class="text-stone-600" data-i18n="benefit1Desc">葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑。</p>
                 </div>
-                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="trending-up"></i></div>
                     <h3 class="text-2xl font-bold mb-4" data-i18n="benefit2Title">馬來西亞首波紅利</h3>
                     <p class="text-stone-600" data-i18n="benefit2Desc">2026/05 正式落地，掌握市場真空期的黃金機會。</p>
                 </div>
-                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100">
+                <div class="benefit-card p-10 bg-stone-50 rounded-[40px] border border-stone-100 text-center">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-8 mx-auto"><i data-lucide="users"></i></div>
                     <h3 class="text-2xl font-bold mb-4" data-i18n="benefit3Title">跨國團隊資源</h3>
                     <p class="text-stone-600" data-i18n="benefit3Desc">提供跨國線上培訓系統，助您快速複製成功模式。</p>
@@ -207,22 +211,22 @@
         <section id="system-summary" class="py-24 bg-stone-100/50 px-6">
             <div class="max-w-7xl mx-auto text-center">
                 <h2 class="text-3xl md:text-5xl font-bold text-stone-900 mb-6" data-i18n="sysSumTitle">2026 馬來西亞創業藍圖</h2>
-                <p class="text-xl text-stone-600 mb-16 max-w-3xl mx-auto" data-i18n="sysSumDesc">打破傳統直銷壓力，回歸健康分享本質，打造真正「努力一次，收穫一世」的公平環境。</p>
+                <p class="text-xl text-stone-600 mb-16 max-w-3xl mx-auto" data-i18n="sysSumDesc">打破傳統直銷壓力，回歸分享本質，打造真正「努力一次，收穫一世」的公平環境。</p>
                 <div class="grid md:grid-cols-3 gap-8 mb-16">
                     <div class="system-highlight-card bg-white p-10 rounded-[40px] shadow-sm border border-stone-100">
                         <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-6 mx-auto"><i data-lucide="infinity"></i></div>
                         <h3 class="text-2xl font-bold mb-4" data-i18n="sysSumH1">積分終身累積</h3>
-                        <p class="text-stone-500" data-i18n="sysSumD1">業績點數終身累計不歸零，您的每一分努力都將被永久記錄。</p>
+                        <p class="text-stone-500" data-i18n="sysSumD1">業績點數終身累積不歸零，您的每一分努力都將被永久記錄。</p>
                     </div>
                     <div class="system-highlight-card bg-white p-10 rounded-[40px] shadow-sm border border-stone-100">
                         <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-6 mx-auto"><i data-lucide="shield-check"></i></div>
                         <h3 class="text-2xl font-bold mb-4" data-i18n="sysSumH2">職級只升不降</h3>
-                        <p class="text-stone-500" data-i18n="sysSumD2">晉升職級後永遠享有對應分潤，無需擔心因單月業績波動而掉聘。</p>
+                        <p class="text-stone-500" data-i18n="sysSumD2">晉升職級後永遠享有分潤，無需擔心因單月業績波動而掉聘。</p>
                     </div>
                     <div class="system-highlight-card bg-white p-10 rounded-[40px] shadow-sm border border-stone-100">
                         <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-2xl flex items-center justify-center mb-6 mx-auto"><i data-lucide="users-2"></i></div>
                         <h3 class="text-2xl font-bold mb-4" data-i18n="sysSumH3">事業世襲傳承</h3>
-                        <p class="text-stone-500" data-i18n="sysSumD3">建立的通路資產可依法由子女繼承，打造可延續的家族事業。</p>
+                        <p class="text-stone-500" data-i18n="sysSumD3">建立的通路資產可由子女繼承，打造可延續的家族事業。</p>
                     </div>
                 </div>
                 <button onclick="showPage('system')" class="px-12 py-4 bg-emerald-800 text-white rounded-full font-bold text-lg hover:shadow-xl transition-all" data-i18n="sysViewMore">查看完整制度細節</button>
@@ -231,7 +235,7 @@
 
         <!-- 4. 相關報導 -->
         <section id="news" class="py-24 bg-emerald-50 border-y border-emerald-100 px-6">
-            <div class="max-w-7xl mx-auto mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-7xl mx-auto mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6 text-left">
                 <div>
                     <h2 class="text-3xl font-bold text-stone-900 mb-4 flex items-center">
                         <i data-lucide="newspaper" class="mr-3 text-emerald-700"></i> <span data-i18n="newsTitle">媒體焦點 / 相關報導</span>
@@ -246,26 +250,26 @@
             <div id="view-marquee" class="relative overflow-hidden">
                 <div class="animate-marquee" id="marquee-content"></div>
             </div>
-            <div id="view-grid" class="hidden max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left"></div>
+            <div id="view-grid" class="hidden max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"></div>
         </section>
 
         <!-- 資源下載 -->
         <section id="downloads" class="py-24 bg-white text-center px-6">
             <h2 class="text-3xl font-bold text-stone-900 mb-16" data-i18n="downloadTitle">資源下載專區</h2>
             <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
+                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center text-left">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="file-text"></i></div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="dl1Title">大馬啟動手冊</h3>
+                    <h3 class="text-xl font-bold mb-2 text-center" data-i18n="dl1Title">大馬啟動手冊</h3>
                     <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400" data-i18n="dlBtn">施工中</button>
                 </div>
-                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
+                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center text-left">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="package"></i></div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="dl2Title">產品完整型錄</h3>
+                    <h3 class="text-xl font-bold mb-2 text-center" data-i18n="dl2Title">產品完整型錄</h3>
                     <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400" data-i18n="dlBtn">施工中</button>
                 </div>
-                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center">
+                <div class="download-card p-8 rounded-[40px] bg-stone-50 border border-stone-100 text-center text-left">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="presentation"></i></div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="dl3Title">事業機會簡報</h3>
+                    <h3 class="text-xl font-bold mb-2 text-center" data-i18n="dl3Title">事業機會簡報</h3>
                     <button onclick="openModal()" class="w-full py-3 bg-stone-300 text-stone-600 rounded-full font-bold hover:bg-stone-400" data-i18n="dlBtn">施工中</button>
                 </div>
             </div>
@@ -292,40 +296,40 @@
             <div class="prose prose-emerald prose-lg text-stone-700 space-y-12">
                 <div class="bg-white p-8 md:p-12 rounded-[50px] shadow-sm border border-stone-100">
                     <h2 class="text-2xl md:text-3xl font-bold mb-6 text-emerald-900" data-i18n="sysDetailH1">一個會員，兩種態度</h2>
-                    <p class="mb-6 leading-relaxed" data-i18n="sysDetailP1">在 UVACO，您可以自由定義自己的角色。沒有強迫，只有選擇：</p>
+                    <p class="mb-6 leading-relaxed" data-i18n="sysDetailP1">在 UVACO (葡眾)，您可以自由定義自己的角色。沒有強迫，只有選擇：</p>
                     <ul class="space-y-4 font-medium">
                         <li class="flex items-start"><i data-lucide="check" class="text-emerald-600 mr-3 mt-1"></i> <span data-i18n="sysDetailL1">純粹消費者：以優惠價享受高品質產品，守護家人健康。</span></li>
                         <li class="flex items-start"><i data-lucide="check" class="text-emerald-600 mr-3 mt-1"></i> <span data-i18n="sysDetailL2">事業經營者：建立屬於自己的跨國事業體，賺取被動收入。</span></li>
                     </ul>
                 </div>
 
-                <div class="space-y-8">
+                <div class="space-y-8 text-left">
                     <div class="flex gap-6 items-start">
                         <div class="w-12 h-12 bg-emerald-800 text-white rounded-full flex-shrink-0 flex items-center justify-center font-bold">1</div>
                         <div>
                             <h3 class="text-2xl font-bold mb-2 text-stone-900" data-i18n="sysSumH1">積分終身累積</h3>
-                            <p data-i18n="sysDetailS1">業績點數不因月底到期而抹消重來。晉升職級後永久享有該職級利潤分配，制度極其穩定。</p>
+                            <p data-i18n="sysDetailS1">業績點數不歸零。晉升職級後永久享有分潤，制度極其穩定。</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start">
                         <div class="w-12 h-12 bg-emerald-800 text-white rounded-full flex-shrink-0 flex items-center justify-center font-bold">2</div>
                         <div>
                             <h3 class="text-2xl font-bold mb-2 text-stone-900" data-i18n="sysDetailH2">低門檻、零囤貨壓力</h3>
-                            <p data-i18n="sysDetailS2">無須年費、月費。每年僅需消費一次 160 SV（約 700~800 MYR）即可保留資格。無強制月消費。</p>
+                            <p data-i18n="sysDetailS2">無須年費、月費。每年僅需消費一次 160 SV（約 700~800 MYR）即可維護資格。</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start">
                         <div class="w-12 h-12 bg-emerald-800 text-white rounded-full flex-shrink-0 flex items-center justify-center font-bold">3</div>
                         <div>
                             <h3 class="text-2xl font-bold mb-2 text-stone-900" data-i18n="sysDetailH3">多元收入與圓夢獎金</h3>
-                            <p data-i18n="sysDetailS3">包含產品銷售佣金、領導獎金、旅遊獎勵。藍鑽職級更享有購車基金與全球分紅。</p>
+                            <p data-i18n="sysDetailS3">包含銷售佣金、領導獎金。藍鑽職級更享有購車基金與全球分紅。</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start">
                         <div class="w-12 h-12 bg-emerald-800 text-white rounded-full flex-shrink-0 flex items-center justify-center font-bold">4</div>
                         <div>
                             <h3 class="text-2xl font-bold mb-2 text-stone-900" data-i18n="sysSumH3">事業繼承權</h3>
-                            <p data-i18n="sysDetailS4">建立的通路與收入可依法世襲（珍珠級以上），讓您的努力惠及子女，打造世代相傳的資產。</p>
+                            <p data-i18n="sysDetailS4">辛苦建立的通路可依法由子女繼承（珍珠級以上），打造可延續的家族事業。</p>
                         </div>
                     </div>
                 </div>
@@ -333,12 +337,12 @@
                 <div class="p-8 bg-stone-200/50 rounded-3xl text-sm border border-stone-200">
                     <h4 class="font-bold text-stone-900 mb-4 flex items-center"><i data-lucide="alert-triangle" class="mr-2 w-5 h-5 text-amber-600"></i> 注意事項</h4>
                     <ul class="space-y-2 text-stone-600 list-disc pl-5">
-                        <li data-i18n="sysWarn1">UVACO 葡眾為合法經營之直銷公司，依法需留意個人稅務申報。</li>
-                        <li data-i18n="sysWarn2">若連續一年完全未有任何訂貨紀錄，會員資格與累積積分將自動失效。</li>
+                        <li data-i18n="sysWarn1">UVACO (葡眾) 為合法經營，需依馬來西亞法律進行個人稅務申報。</li>
+                        <li data-i18n="sysWarn2">若連續一年完全未有訂貨紀錄，會員資格與累積積分將自動失效。</li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-16 text-center">
+            <div class="mt-16 text-center text-left">
                 <a href="#contact" onclick="showPage('home')" class="px-12 py-5 bg-emerald-800 text-white rounded-full font-bold text-xl hover:shadow-2xl transition-all inline-block" data-i18n="sysJoinNow">準備好加入首批大馬團隊</a>
             </div>
         </div>
@@ -361,6 +365,7 @@
         </div>
     </footer>
 
+    <!-- 自訂彈窗 -->
     <div id="custom-modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="w-20 h-20 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center mb-6 mx-auto"><i data-lucide="construction" class="w-10 h-10"></i></div>
@@ -388,27 +393,27 @@
                 "benefit1Title": "品牌實力保證", "benefit1Desc": "葡眾身為台灣直銷龍頭企業，擁有數十年的誠信口碑。",
                 "benefit2Title": "馬來西亞紅利", "benefit2Desc": "2026/05 正式落地，掌握市場真空期的黃金機會。",
                 "benefit3Title": "跨國團隊資源", "benefit3Desc": "提供跨國培訓系統，助您快速複製成功模式。",
-                "sysSumTitle": "2026 馬來西亞創業藍圖", "sysSumDesc": "打破傳統壓力，打造「努力一次，收穫一世」的公平環境。",
-                "sysSumH1": "積分終身累積", "sysSumD1": "業績點數終身累計不歸零，您的每一分努力都將被永久記錄。",
-                "sysSumH2": "職級只升不降", "sysSumD2": "晉升職級後永遠享有分潤，無需擔心因單月業績波動而掉聘。",
-                "sysSumH3": "事業世襲傳承", "sysSumD3": "建立的市場通路可由子女繼承，打造世代相傳的家族事業。",
+                "sysSumTitle": "2026 馬來西亞創業藍圖", "sysSumDesc": "打破壓力，打造「努力一次，收穫一世」的公平環境。",
+                "sysSumH1": "積分終身累積", "sysSumD1": "業績不歸零，您的努力將被永久記錄。",
+                "sysSumH2": "職級只升不降", "sysSumD2": "晉升後享有分潤，無需擔心業績波動掉聘。",
+                "sysSumH3": "事業世襲傳承", "sysSumD3": "通路可由子女繼承，打造世代相傳的家族事業。",
                 "sysViewMore": "查看完整制度細節", "sysBack": "回到首頁", "sysDetailTitle": "制度精華與創業藍圖",
-                "sysDetailH1": "一個會員，兩種態度", "sysDetailP1": "在 UVACO，您可以自由定義自己的角色：",
+                "sysDetailH1": "一個會員，兩種態度", "sysDetailP1": "在 UVACO (葡眾)，您可以自由定義自己的角色：",
                 "sysDetailL1": "純粹消費者：以優惠價享受高品質產品。", "sysDetailL2": "事業經營者：建立自己的跨國事業體。",
                 "sysDetailH2": "低門檻、零囤貨壓力", "sysDetailS1": "業績不抹消，晉升不退步，制度穩健可靠。",
-                "sysDetailS2": "無年費月費。每年消費一次 160 SV 即可維護資格。",
-                "sysDetailH3": "多元獎金與圓夢基金", "sysDetailS3": "包含銷售佣金、旅遊獎勵，藍鑽級更享有購車基金。",
+                "sysDetailS2": "無年費。每年消費一次 160 SV 即可維護資格。",
+                "sysDetailH3": "多元獎金與基金", "sysDetailS3": "包含佣金、旅遊獎勵，藍鑽級享購車基金。",
                 "sysDetailS4": "珍珠級以上可世襲，讓努力惠及下一代。",
-                "sysWarn1": "依法需留意個人稅務申報。", "sysWarn2": "若一年完全未訂貨，資格將失效歸零。",
+                "sysWarn1": "需留意個人所得稅務申報。", "sysWarn2": "若一年未訂貨，資格將失效歸零。",
                 "sysJoinNow": "準備好加入首批大馬團隊",
                 "philTitle": "將這份健康與機會<br><span class='text-emerald-800'>傳遞到馬來西亞</span>",
                 "philDesc": "尋找夥伴，UVACO 馬來西亞將是您展現才華的舞台。",
                 "philDate": "2026.05", "philComing": "正式啟動",
-                "philFeat1": "落地法律保障", "philFeat2": "優渥獎金制度", "philFeat3": "活力教練團隊",
+                "philFeat1": "落地法律保障", "philFeat2": "優渥獎金制度", "philFeat3": "專業教練團隊",
                 "newsTitle": "媒體焦點", "newsSubTitle": "透過專業媒體視角，見證實力",
                 "newsToggleMarquee": "動態展示", "newsToggleGrid": "網格導覽",
-                "downloadTitle": "資源下載專區", "dlBtn": "施工中", "dl1Title": "啟動手冊", "dl2Title": "完整型錄", "dl3Title": "機會簡報",
-                "contactTitle": "搶占首波商機", "whatsappText": "WhatsApp 諮詢", "whatsappMsg": "您好，我想了解 UVACO 制度計畫",
+                "downloadTitle": "資源下載", "dlBtn": "施工中", "dl1Title": "啟動手冊", "dl2Title": "完整型錄", "dl3Title": "機會簡報",
+                "contactTitle": "搶占首波商機", "whatsappText": "WhatsApp 諮詢", "whatsappMsg": "您好，我想了解 UVACO (葡眾) 制度計畫",
                 "modalTitle": "尚未正式啟動", "modalDesc": "請留下聯絡方式，成為大馬首波成員", "modalBtn": "留下聯絡方式",
                 "footerText": "© 2026 UVACO Malaysia Founding Team | 非官方網站。"
             },
@@ -422,27 +427,27 @@
                 "benefit1Title": "品牌实力保证", "benefit1Desc": "葡众身为台湾直销龙头企业，拥有数十年的诚信口碑。",
                 "benefit2Title": "马来西亚红利", "benefit2Desc": "2026/05 正式落地，掌握市场真空期的黄金机会。",
                 "benefit3Title": "跨国团队资源", "benefit3Desc": "提供跨国培训系统，助您快速复制成功模式。",
-                "sysSumTitle": "2026 马来西亚创业蓝图", "sysSumDesc": "打破传统压力，打造“努力一次，收获一世”的公平环境。",
-                "sysSumH1": "积分终身累积", "sysSumD1": "业绩点数终身累积不归零，您的每一分努力都将被永久记录。",
-                "sysSumH2": "职级只升不降", "sysSumD2": "晋升职级后永远享有分润，无需担心因单月业绩波动而掉聘。",
-                "sysSumH3": "事业世袭传承", "sysSumD3": "建立的市场通路可由子女继承，打造世代相传的家族事业。",
+                "sysSumTitle": "2026 马来西亚创业蓝图", "sysSumDesc": "打破压力，打造“努力一次，收获一世”的公平环境。",
+                "sysSumH1": "积分终身累积", "sysSumD1": "业绩不归零，您的努力将被永久记录。",
+                "sysSumH2": "职级只升不降", "sysSumD2": "晋升后享有分润，无需担心业绩波动掉聘。",
+                "sysSumH3": "事业世袭传承", "sysSumD3": "通路可由子女继承，打造世代相传的家族事业。",
                 "sysViewMore": "查看完整制度细节", "sysBack": "回到首页", "sysDetailTitle": "制度精华与创业蓝图",
-                "sysDetailH1": "一个会员，两种态度", "sysDetailP1": "在 UVACO，您可以自由定义自己的角色：",
+                "sysDetailH1": "一个会员，两种态度", "sysDetailP1": "在 UVACO (葡众)，您可以自由定义自己的角色：",
                 "sysDetailL1": "纯粹消费者：以优惠价享受高质量产品。", "sysDetailL2": "事业经营者：建立自己的跨国事业体。",
                 "sysDetailH2": "低门槛、零囤货压力", "sysDetailS1": "业绩不抹消，晋升不退步，制度稳健可靠。",
-                "sysDetailS2": "无年费月费。每年消费一次 160 SV 即可维护资格。",
-                "sysDetailH3": "多元奖金与圆梦基金", "sysDetailS3": "包含销售佣金、旅游奖励，蓝钻级更享有购车基金。",
+                "sysDetailS2": "无年费。每年消费一次 160 SV 即可维护资格。",
+                "sysDetailH3": "多元奖金与基金", "sysDetailS3": "包含佣金、旅游奖励，蓝钻级享购车基金。",
                 "sysDetailS4": "珍珠级以上可世袭，让努力惠及下一代。",
-                "sysWarn1": "依法需留意个人税务申报。", "sysWarn2": "若一年完全未订货，资格将失效归零。",
+                "sysWarn1": "需留意个人所得税务申报。", "sysWarn2": "若一年未订货，资格将失效归零。",
                 "sysJoinNow": "准备好加入首批大马团队",
                 "philTitle": "将这份健康与机会<br><span class='text-emerald-800'>传递到马来西亚</span>",
                 "philDesc": "寻找伙伴，UVACO 马来西亚将是您展现才华的舞台。",
                 "philDate": "2026.05", "philComing": "正式启动",
-                "philFeat1": "落地法律保障", "philFeat2": "优渥奖金制度", "philFeat3": "活力教练团队",
+                "philFeat1": "落地法律保障", "philFeat2": "优渥奖金制度", "philFeat3": "专业教练团队",
                 "newsTitle": "媒体焦点", "newsSubTitle": "透过专业媒体视角，见证实力",
                 "newsToggleMarquee": "动态展示", "newsToggleGrid": "网格导引",
-                "downloadTitle": "资源下载专区", "dlBtn": "施工中", "dl1Title": "启动手册", "dl2Title": "完整型录", "dl3Title": "机会简报",
-                "contactTitle": "抢占首波商机", "whatsappText": "WhatsApp 咨询", "whatsappMsg": "您好，我想了解 UVACO 制度计划",
+                "downloadTitle": "资源下载", "dlBtn": "施工中", "dl1Title": "启动手册", "dl2Title": "完整型录", "dl3Title": "机会简报",
+                "contactTitle": "抢占首波商机", "whatsappText": "WhatsApp 咨询", "whatsappMsg": "您好，我想了解 UVACO (葡众) 制度计划",
                 "modalTitle": "尚未正式启动", "modalDesc": "请留下联系方式，成为大马首波成员", "modalBtn": "留下联系方式",
                 "footerText": "© 2026 UVACO Malaysia Founding Team | 非官方网站。"
             },
@@ -451,21 +456,21 @@
                 "brandSub": "Pro-Partner", "navBenefits": "Benefits", "navPhilosophy": "Philosophy", "navNews": "News", "navDownloads": "Downloads", "navJoin": "Join Team", "navSystem": "System",
                 "heroTitle": "Based in Taiwan,<br><span class='text-emerald-800'>Winning in Malaysia</span>",
                 "heroDesc": "Launching May 2026. Seize the opportunity now.",
-                "heroBtnPrimary": "Join Team", "heroBtnSecondary": "System",
+                "heroBtnPrimary": "Join Team", "heroBtnSecondary": "Our System",
                 "benefitsTitle": "Global Quality, Solid Support",
                 "benefit1Title": "Reliability", "benefit1Desc": "Decades of trust as Taiwan's leading direct selling enterprise.",
-                "benefit2Title": "First Dividend", "benefit2Desc": "Capture the market gold rush starting May 2026.",
+                "benefit2Title": "Malaysia Dividend", "benefit2Desc": "Capture the market gold rush starting May 2026.",
                 "benefit3Title": "Global Support", "benefit3Desc": "Replicate success with our cross-border training system.",
                 "sysSumTitle": "2026 Entrepreneur Blueprint", "sysSumDesc": "Break free from pressure. Effort once, harvest for a lifetime.",
                 "sysSumH1": "Lifetime PV", "sysSumD1": "Points never reset. Your effort is recorded permanently.",
                 "sysSumH2": "No Demotion", "sysSumD2": "Once ranked, always ranked. Your profit share is safe.",
                 "sysSumH3": "Inheritable Rights", "sysSumD3": "Your network can be passed down to your children.",
                 "sysViewMore": "Full System Details", "sysBack": "Back Home", "sysDetailTitle": "System Excellence",
-                "sysDetailH1": "One Member, Two Attitudes", "sysDetailP1": "Define your role in UVACO:",
+                "sysDetailH1": "One Member, Two Attitudes", "sysDetailP1": "Define your role in UVACO (Pro-Partner):",
                 "sysDetailL1": "Consumer: Premium products at discounted prices.", "sysDetailL2": "Builder: Create a global business network.",
-                "sysDetailH2": "Low Bar, No Pressure", "sysDetailS1": "No resets, no demotions. A stable and reliable plan.",
+                "sysDetailH2": "Low Bar, No Pressure", "sysDetailS1": "No resets, no demotions. A stable plan.",
                 "sysDetailS2": "No annual fees. Maintain status with 160 SV order per year.",
-                "sysDetailH3": "Multi-tier Bonuses", "sysDetailS3": "Sales comms, travel rewards, and car fund for Diamonds.",
+                "sysDetailH3": "Multi-tier Bonuses", "sysDetailS3": "Sales comms, rewards, and car fund for Diamonds.",
                 "sysDetailS4": "Inheritable from Pearl level and above.",
                 "sysWarn1": "Compliance with local tax laws required.", "sysWarn2": "Status revoked if inactive for one full year.",
                 "sysJoinNow": "Ready to Join the Malaysia Team",
@@ -476,7 +481,7 @@
                 "newsTitle": "Media Focus", "newsSubTitle": "Witness our strength through media eyes",
                 "newsToggleMarquee": "Marquee", "newsToggleGrid": "Grid",
                 "downloadTitle": "Resource Center", "dlBtn": "Pending", "dl1Title": "Manual", "dl2Title": "Catalog", "dl3Title": "Deck",
-                "contactTitle": "Seize the Opportunity", "whatsappText": "WhatsApp Us", "whatsappMsg": "Hi, I want to learn about UVACO System",
+                "contactTitle": "Seize the Opportunity", "whatsappText": "WhatsApp Us", "whatsappMsg": "Hi, I want to learn about UVACO (Pro-Partner) System",
                 "modalTitle": "Not Yet Launched", "modalDesc": "Leave info to join our first-wave team.", "modalBtn": "Contact Us",
                 "footerText": "© 2026 UVACO Malaysia Founding Team | Unofficial site."
             },
@@ -495,7 +500,7 @@
                 "sysSumH2": "Tiada Turun Pangkat", "sysSumD2": "Sekali naik, selamanya di sana. Profit share anda selamat.",
                 "sysSumH3": "Hak Pewarisan", "sysSumD3": "Rangkaian anda boleh diwarisi oleh anak-anak.",
                 "sysViewMore": "Butiran Sistem Penuh", "sysBack": "Balik Utama", "sysDetailTitle": "Kecemerlangan Sistem",
-                "sysDetailH1": "Satu Ahli, Dua Sikap", "sysDetailP1": "Tentukan peranan anda dalam UVACO:",
+                "sysDetailH1": "Satu Ahli, Dua Sikap", "sysDetailP1": "Tentukan peranan anda dalam UVACO (Pro-Partner):",
                 "sysDetailL1": "Pengguna: Produk premium pada harga ahli.", "sysDetailL2": "Pembina: Bina rangkaian perniagaan global.",
                 "sysDetailH2": "Halangan Rendah, Tiada Tekanan", "sysDetailS1": "Tiada reset, tiada turun pangkat. Pelan stabil.",
                 "sysDetailS2": "Tiada yuran tahunan. Kekal ahli dengan 160 SV setahun.",
@@ -510,13 +515,11 @@
                 "newsTitle": "Fokus Media", "newsSubTitle": "Saksikan kehebatan kami melalui media",
                 "newsToggleMarquee": "Pertunjukan", "newsToggleGrid": "Grid",
                 "downloadTitle": "Pusat Muat Turun", "dlBtn": "Dibina", "dl1Title": "Manual", "dl2Title": "Katalog", "dl3Title": "Slaid",
-                "contactTitle": "Rebut Peluang", "whatsappText": "WhatsApp", "whatsappMsg": "Halo, saya mahu tahu tentang Sistem UVACO",
+                "contactTitle": "Rebut Peluang", "whatsappText": "WhatsApp", "whatsappMsg": "Halo, saya mahu tahu tentang Sistem UVACO (Pro-Partner)",
                 "modalTitle": "Belum Dilancarkan", "modalDesc": "Tinggalkan maklumat untuk sertai pasukan kami.", "modalBtn": "Hubungi Kami",
                 "footerText": "© 2026 Pasukan Pengasas UVACO Malaysia | Laman web tidak rasmi."
             }
         };
-
-        let currentLang = 'zh-Hant';
 
         function showPage(page) {
             const homeView = document.getElementById('home-view');
@@ -545,17 +548,17 @@
         }
 
         function changeLanguage(lang) {
-            currentLang = lang;
-            document.querySelectorAll('[data-i18n]').forEach(el => {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (i18n[lang][key]) el.innerHTML = i18n[lang][key];
             });
             document.documentElement.lang = lang;
-            renderNews();
-            updateWhatsAppLink();
+            renderNews(lang);
+            updateWhatsAppLink(lang);
         }
 
-        function renderNews() {
+        function renderNews(lang) {
             const marquee = document.getElementById('marquee-content');
             const grid = document.getElementById('view-grid');
             let newsHTML = '<div class="flex space-x-8 px-4">';
@@ -566,7 +569,7 @@
                             <span class="text-emerald-700 font-bold text-lg uppercase">${item.src}</span>
                             <i data-lucide="external-link" class="w-5 h-5 text-stone-300"></i>
                         </div>
-                        <h4 class="font-bold text-xl">${item[currentLang] || item.hant}</h4>
+                        <h4 class="font-bold text-xl text-left">${item[lang] || item.hant}</h4>
                     </a>`;
             });
             newsHTML += '</div>';
@@ -577,7 +580,7 @@
                 gridHTML += `
                     <a href="${item.link}" target="_blank" class="news-card bg-white p-8 rounded-[40px] border border-stone-200 hover:border-emerald-500 shadow-sm block text-left">
                         <div class="text-emerald-600 text-xs font-bold mb-2 uppercase">${item.src}</div>
-                        <h4 class="text-lg font-bold mb-4">${item[currentLang] || item.hant}</h4>
+                        <h4 class="text-lg font-bold mb-4">${item[lang] || item.hant}</h4>
                         <div class="text-emerald-800 text-sm font-medium flex items-center">
                             Read More <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                         </div>
@@ -587,19 +590,17 @@
             lucide.createIcons();
         }
 
-        function updateWhatsAppLink() {
+        function updateWhatsAppLink(lang) {
             const btn = document.getElementById('whatsapp-btn');
-            const msg = encodeURIComponent(i18n[currentLang].whatsappMsg);
+            const msg = encodeURIComponent(i18n[lang].whatsappMsg);
             btn.href = `https://wa.me/886908985002?text=${msg}`;
         }
 
         function toggleNewsView(view) {
             const btnMarquee = document.getElementById('btn-marquee');
             const btnGrid = document.getElementById('btn-grid');
-            const viewMarquee = document.getElementById('view-marquee');
-            const viewGrid = document.getElementById('view-grid');
-            viewMarquee.style.display = (view === 'marquee') ? 'block' : 'none';
-            viewGrid.style.display = (view === 'grid') ? 'grid' : 'none';
+            document.getElementById('view-marquee').style.display = (view === 'marquee') ? 'block' : 'none';
+            document.getElementById('view-grid').style.display = (view === 'grid') ? 'grid' : 'none';
             if (view === 'grid') {
                 btnGrid.classList.add('bg-emerald-800', 'text-white'); btnGrid.classList.remove('text-emerald-700', 'hover:bg-emerald-50');
                 btnMarquee.classList.remove('bg-emerald-800', 'text-white'); btnMarquee.classList.add('text-emerald-700', 'hover:bg-emerald-50');
@@ -612,8 +613,8 @@
         function openModal() { document.getElementById('custom-modal').style.display = 'flex'; }
         function closeModal() { document.getElementById('custom-modal').style.display = 'none'; }
         
-        renderNews();
-        updateWhatsAppLink();
+        renderNews('zh-Hant');
+        updateWhatsAppLink('zh-Hant');
         lucide.createIcons();
     </script>
 </body>
