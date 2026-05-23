@@ -56,14 +56,6 @@ export const newsData: NewsItem[] = [
     ms: 'Pro-Partner Ke Peringkat Global: Model Inovatif',
     link: 'https://pingtungtimes.com.tw/?p=348385',
   },
-  {
-    src: '直銷世紀',
-    hant: 'UVACO葡眾品牌全新升級，2026正式啟動大馬市場',
-    hans: 'UVACO葡众品牌全新升级，2026正式启动大马市场',
-    en: 'UVACO Pro-Partner Brand Upgrade, Malaysia 2026 Launch',
-    ms: 'UVACO Pro-Partner Naik Taraf, Pelancaran Malaysia 2026',
-    link: '#',
-  },
 ];
 
 export type NewsLangKey = 'hant' | 'hans' | 'en' | 'ms';
