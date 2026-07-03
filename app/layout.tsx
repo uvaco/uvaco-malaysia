@@ -12,30 +12,30 @@ import LeadModal from '@/components/modals/LeadModal';
 import AutoDisclaimer from '@/components/modals/AutoDisclaimer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.uvacomy.info'),
+  metadataBase: new URL('https://www.uvaco.info'),
   title: {
-    default: 'UVACO (葡眾) Malaysia | Pro-Partner 2026 馬來西亞啟動',
+    default: 'UVACO (葡眾) Malaysia | Pro-Partner 馬來西亞',
     template: '%s | UVACO Malaysia',
   },
   description:
-    '葡眾馬來西亞 2026/05/29 正式啟動！Pro-Partner Malaysia 首批會員招募中。積分終身累積、職級只升不降、事業可世襲傳承。立即登記搶先佈局馬來西亞市場。',
+    '葡眾馬來西亞現正營運中！Pro-Partner Malaysia 早期會員招募中。積分終身累積、職級只升不降、事業可世襲傳承。立即登記把握營運初期的最佳時機。',
   keywords: [
-    'UVACO', '葡眾', 'Pro-Partner Malaysia', '葡眾馬來西亞', 'UVACO Malaysia 2026',
-    '馬來西亞直銷', '馬來西亞創業機會', '葡眾大馬', '葡眾啟動', 'uvacomy.info',
-    'direct sales Malaysia', 'MLM Malaysia 2026', 'Grape King Malaysia',
+    'UVACO', '葡眾', 'Pro-Partner Malaysia', '葡眾馬來西亞', 'UVACO Malaysia',
+    '馬來西亞直銷', '馬來西亞創業機會', '葡眾大馬', 'uvaco.info',
+    'direct sales Malaysia', 'MLM Malaysia', 'Grape King Malaysia',
   ],
-  authors: [{ name: 'UVACO Malaysia First Wave Team', url: 'https://www.uvacomy.info' }],
-  creator: 'UVACO Malaysia First Wave Team',
+  authors: [{ name: 'UVACO Malaysia Early Member Team', url: 'https://www.uvaco.info' }],
+  creator: 'UVACO Malaysia Early Member Team',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     type: 'website',
     locale: 'zh_TW',
     alternateLocale: ['zh_CN', 'en_US', 'ms_MY'],
-    url: 'https://www.uvacomy.info',
+    url: 'https://www.uvaco.info',
     siteName: 'UVACO Malaysia',
-    title: 'UVACO (葡眾) Malaysia | Pro-Partner 2026 馬來西亞啟動',
+    title: 'UVACO (葡眾) Malaysia | Pro-Partner 馬來西亞',
     description:
-      '葡眾馬來西亞 2026/05/29 正式啟動！首批會員招募中。積分終身累積、職級只升不降、事業可世襲傳承。',
+      '葡眾馬來西亞現正營運中！早期會員招募中。積分終身累積、職級只升不降、事業可世襲傳承。',
     images: [
       {
         url: '/UVACO_products.png',
@@ -47,17 +47,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UVACO (葡眾) Malaysia | Pro-Partner 2026 馬來西亞啟動',
-    description: '葡眾馬來西亞 2026/05/29 正式啟動！首批會員招募中。',
+    title: 'UVACO (葡眾) Malaysia | Pro-Partner 馬來西亞',
+    description: '葡眾馬來西亞現正營運中！早期會員招募中。',
     images: ['/UVACO_products.png'],
   },
   alternates: {
-    canonical: 'https://www.uvacomy.info',
+    canonical: 'https://www.uvaco.info',
     languages: {
-      'zh-TW': 'https://www.uvacomy.info',
-      'zh-CN': 'https://www.uvacomy.info',
-      'en': 'https://www.uvacomy.info',
-      'ms': 'https://www.uvacomy.info',
+      'zh-TW': 'https://www.uvaco.info',
+      'zh-CN': 'https://www.uvaco.info',
+      'en': 'https://www.uvaco.info',
+      'ms': 'https://www.uvaco.info',
     },
   },
 };
@@ -68,38 +68,16 @@ const jsonLd = [
     '@type': 'Organization',
     name: 'UVACO Malaysia (葡眾馬來西亞)',
     alternateName: ['Pro-Partner Malaysia', '葡眾', 'UVACO', 'Grape King Malaysia'],
-    url: 'https://www.uvacomy.info',
-    logo: 'https://www.uvacomy.info/UVACO_products.png',
+    url: 'https://www.uvaco.info',
+    logo: 'https://www.uvaco.info/UVACO_products.png',
     description:
-      '葡眾（Pro-Partner）馬來西亞分公司，2026年5月29日正式啟動，提供優質健康產品與創業機會。母公司葡萄王上市逾40年，台灣直銷龍頭。',
+      '葡眾（Pro-Partner）馬來西亞分公司，已於 2026 年 5 月 29 日正式營運，提供優質健康產品與創業機會。母公司葡萄王上市逾40年，台灣直銷龍頭。',
     foundingDate: '2026',
     areaServed: { '@type': 'Country', name: 'Malaysia' },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
       availableLanguage: ['Chinese', 'English', 'Malay'],
-    },
-    sameAs: ['https://uvaco-malaysia-c.vercel.app'],
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Event',
-    name: 'UVACO Pro-Partner Malaysia 2026 Official Launch 葡眾馬來西亞正式啟動',
-    startDate: '2026-05-29',
-    endDate: '2026-05-29',
-    eventStatus: 'https://schema.org/EventScheduled',
-    eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
-    location: { '@type': 'Country', name: 'Malaysia' },
-    description:
-      '葡眾（UVACO / Pro-Partner）馬來西亞正式啟動，首批會員招募。掌握市場空白期的黃金機會。',
-    organizer: { '@type': 'Organization', name: 'UVACO Malaysia', url: 'https://www.uvacomy.info' },
-    url: 'https://www.uvacomy.info',
-    image: 'https://www.uvacomy.info/UVACO_products.png',
-    offers: {
-      '@type': 'Offer',
-      description: '加入葡眾馬來西亞首批會員，搶佔市場先機',
-      url: 'https://www.uvacomy.info/#contact',
-      availability: 'https://schema.org/InStock',
     },
   },
   {
@@ -111,12 +89,12 @@ const jsonLd = [
         name: '葡眾馬來西亞什麼時候正式啟動？',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: '葡眾（UVACO / Pro-Partner）馬來西亞將於 2026 年 5 月 29 日正式啟動，現正招募首批會員。',
+          text: '葡眾（UVACO / Pro-Partner）馬來西亞已於 2026 年 5 月 29 日正式營運，現正招募早期會員。',
         },
       },
       {
         '@type': 'Question',
-        name: '如何加入葡眾馬來西亞首批會員？',
+        name: '如何加入葡眾馬來西亞早期會員？',
         acceptedAnswer: {
           '@type': 'Answer',
           text: '請填寫網站上的聯絡表單，台灣核心團隊將在 24 小時內與您聯繫，提供完整的入會資訊。',
@@ -143,7 +121,7 @@ const jsonLd = [
         name: 'What is UVACO Pro-Partner Malaysia?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'UVACO (Pro-Partner / 葡眾) is a Taiwan-based direct sales company launching in Malaysia on May 29, 2026. The parent company Grape King has been publicly listed for 40+ years. Members enjoy lifetime PV accumulation, no rank demotion, and an inheritable business network.',
+          text: 'UVACO (Pro-Partner / 葡眾) is a Taiwan-based direct sales company that launched in Malaysia on May 29, 2026. The parent company Grape King has been publicly listed for 40+ years. Members enjoy lifetime PV accumulation, no rank demotion, and an inheritable business network.',
         },
       },
       {
@@ -151,7 +129,7 @@ const jsonLd = [
         name: 'Apakah UVACO Pro-Partner Malaysia?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'UVACO (Pro-Partner) adalah syarikat jualan langsung Taiwan yang dilancarkan di Malaysia pada 29 Mei 2026. Mata terkumpul seumur hidup, pangkat tidak turun, dan rangkaian perniagaan boleh diwarisi.',
+          text: 'UVACO (Pro-Partner) adalah syarikat jualan langsung Taiwan yang telah dilancarkan di Malaysia pada 29 Mei 2026. Mata terkumpul seumur hidup, pangkat tidak turun, dan rangkaian perniagaan boleh diwarisi.',
         },
       },
     ],
@@ -159,9 +137,9 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    url: 'https://www.uvacomy.info',
+    url: 'https://www.uvaco.info',
     name: 'UVACO Malaysia',
-    description: '葡眾馬來西亞 2026 正式啟動資訊站',
+    description: '葡眾馬來西亞資訊站',
     inLanguage: ['zh-TW', 'zh-CN', 'en', 'ms'],
   },
 ];

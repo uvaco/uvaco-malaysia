@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.uvacomy.info';
-  const lastModified = new Date('2026-04-24');
+  const baseUrl = 'https://www.uvaco.info';
+  const lastModified = new Date('2026-07-03');
 
   return [
     {

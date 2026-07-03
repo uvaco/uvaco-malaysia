@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://www.uvacomy.info/sitemap.xml',
-    host: 'https://www.uvacomy.info',
+    sitemap: 'https://www.uvaco.info/sitemap.xml',
+    host: 'https://www.uvaco.info',
   };
 }

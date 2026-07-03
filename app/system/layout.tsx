@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: '葡眾馬來西亞創業制度詳解 | UVACO Pro-Partner Malaysia System',
     description:
       '積分終身累積、職級不降、事業可傳承。每年僅需 160 SV 維護資格，無年費月費，合法穩定。',
-    url: 'https://www.uvacomy.info/system',
+    url: 'https://www.uvaco.info/system',
   },
   alternates: {
-    canonical: 'https://www.uvacomy.info/system',
+    canonical: 'https://www.uvaco.info/system',
   },
 };
 

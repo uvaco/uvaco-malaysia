@@ -1,10 +1,10 @@
-# UVACO Malaysia (葡眾馬來西亞) — uvacomy.info
+# UVACO Malaysia (葡眾馬來西亞) — uvaco.info
 
 ## 網站概述 | About This Site
 
-本網站（uvacomy.info）為葡眾馬來西亞首批會員團隊的獨立資訊推廣頁面，非葡眾台灣官方網站。
+本網站（uvaco.info）為葡眾馬來西亞早期會員團隊的獨立資訊推廣頁面，非葡眾台灣官方網站。
 
-This site (uvacomy.info) is an independent information page operated by the Malaysia first-wave member team of UVACO (Pro-Partner / 葡眾). It is NOT the official Pro-Partner Taiwan website.
+This site (uvaco.info) is an independent information page operated by the Malaysia early member team of UVACO (Pro-Partner / 葡眾). It is NOT the official Pro-Partner Taiwan website.
 
 ---
 
@@ -13,17 +13,17 @@ This site (uvacomy.info) is an independent information page operated by the Mala
 - **品牌名稱 / Brand**: UVACO、葡眾、Pro-Partner
 - **母公司 / Parent Company**: 葡萄王生技股份有限公司 (Grape King Bio Ltd.)，台灣上市公司，上市逾 40 年，EPS NT$6.58
 - **定位**: 台灣直銷龍頭企業旗下健康產品品牌
-- **馬來西亞啟動日期 / Malaysia Launch Date**: 2026 年 5 月 29 日 (May 29, 2026)
-- **官方網址 / Official Domain**: uvacomy.info / www.uvacomy.info
+- **馬來西亞啟動日期 / Malaysia Launch Date**: 2026 年 5 月 29 日（已正式營運 / Now operating）
+- **官方網址 / Official Domain**: uvaco.info / www.uvaco.info
 
 ---
 
-## 馬來西亞啟動 | Malaysia Launch
+## 馬來西亞現況 | Malaysia Status
 
-葡眾（UVACO / Pro-Partner）於 2026 年 5 月 29 日在馬來西亞正式啟動，現正招募首批會員。
+葡眾（UVACO / Pro-Partner）已於 2026 年 5 月 29 日在馬來西亞正式營運，現正招募早期會員。
 
-- 首批會員享有先行者優勢（First Mover Advantage）
-- 市場空白期，競爭最少、機會最大
+- 早期會員享有先行者優勢（Early Mover Advantage）
+- 市場剛起步，競爭少、機會大
 - 語言文化相近（華語、馬來語、英語），複製台灣成功模式最快的市場
 
 ---
@@ -55,7 +55,7 @@ This site (uvacomy.info) is an independent information page operated by the Mala
 1. 填寫網站聯絡表單（首頁 #contact 區塊）
 2. 台灣核心團隊在 24 小時內聯繫
 3. 完成線上培訓，掌握產品知識與制度細節
-4. 2026/05/29 正式啟動，開始經營
+4. 立即開始經營，把握馬來西亞營運初期的最佳時機
 
 ---
 
@@ -65,16 +65,16 @@ This site (uvacomy.info) is an independent information page operated by the Mala
 A: 是的。葡眾依馬來西亞法律合法經營，需自行申報個人所得稅。
 
 **Q: 加入後多久可以開始賺錢？**
-A: 啟動後即可開始銷售產品賺取佣金。建立團隊後可獲得領導獎金與被動收入。
+A: 現正營運中，加入後即可開始銷售產品賺取佣金。建立團隊後可獲得領導獎金與被動收入。
 
 **Q: 不想做生意，只是想用產品可以嗎？**
 A: 可以。葡眾提供純消費者身份，以優惠會員價享用高品質健康產品。
 
 **Q: What is Pro-Partner Malaysia?**
-A: Pro-Partner (UVACO / 葡眾) is a Taiwan-based health product direct sales brand launching in Malaysia on May 29, 2026. Parent company Grape King has been publicly listed for 40+ years. The business system features lifetime PV accumulation, no rank demotion, and an inheritable network.
+A: Pro-Partner (UVACO / 葡眾) is a Taiwan-based health product direct sales brand that launched in Malaysia on May 29, 2026. Parent company Grape King has been publicly listed for 40+ years. The business system features lifetime PV accumulation, no rank demotion, and an inheritable network.
 
 **Q: Apakah Pro-Partner Malaysia?**
-A: Pro-Partner (UVACO / 葡眾) adalah jenama produk kesihatan jualan langsung Taiwan yang dilancarkan di Malaysia pada 29 Mei 2026. Mata tidak pernah reset, pangkat tidak pernah turun, dan rangkaian perniagaan boleh diwarisi.
+A: Pro-Partner (UVACO / 葡眾) adalah jenama produk kesihatan jualan langsung Taiwan yang telah dilancarkan di Malaysia pada 29 Mei 2026. Mata tidak pernah reset, pangkat tidak pernah turun, dan rangkaian perniagaan boleh diwarisi.
 
 ---
 
@@ -82,13 +82,13 @@ A: Pro-Partner (UVACO / 葡眾) adalah jenama produk kesihatan jualan langsung T
 
 - **Telegram**: 請透過網站底部浮動按鈕聯絡
 - **WhatsApp**: 請透過網站底部浮動按鈕聯絡
-- **表單 / Form**: https://www.uvacomy.info/#contact
+- **表單 / Form**: https://www.uvaco.info/#contact
 
 ---
 
 ## 頁面結構 | Site Structure
 
-- `/` — 首頁（品牌理念、產品優勢、創業制度概覽、首批優勢、首發產品、媒體報導、資源下載、聯絡表單）
+- `/` — 首頁（品牌理念、產品優勢、創業制度概覽、早期優勢、首發產品、媒體報導、資源下載、聯絡表單）
 - `/system` — 制度詳解頁面（完整創業制度說明）
 - `/sitemap.xml` — 網站地圖
 - `/robots.txt` — 搜尋引擎指引
@@ -100,4 +100,4 @@ A: Pro-Partner (UVACO / 葡眾) adalah jenama produk kesihatan jualan langsung T
 本網站為非官方獨立推廣頁面。所有官方資訊請以葡眾台灣官方網站為準。
 This is an independent non-official promotional page. For all official information, please refer to the official Pro-Partner Taiwan website.
 
-*最後更新 Last Updated: 2026-04-24*
+*最後更新 Last Updated: 2026-07-03*
